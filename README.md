@@ -88,10 +88,24 @@ yours to add; they can't live in a static repo.
 
 The form in `index.html` (`#updates`) posts to a **placeholder** provider endpoint. It
 loads no third-party script — the provider is contacted only when a visitor submits.
-Swap the `<form action="…">` for your own privacy-respecting list:
+Swap the `<form action="…">` for your own privacy-respecting list.
 
-- **Buttondown** (GDPR-friendly, no ad trackers) — replace the action with your embed URL.
-- **Self-hosted Listmonk** — point the action at your instance.
+**Provider: CleverReach "Lite"** (chosen 2026-07-13) — German data residency (DE/EU
+servers, ISO 27001), GDPR-native, double opt-in on by default, free forever to 250
+recipients / 1,000 emails per month. Steps:
+
+1. Create the CleverReach account and a signup form for the list.
+2. **Turn tracking off.** Not a form setting — enable the account-wide privacy /
+   anonymised-tracking mode (Account ▸ Datenschutz), so CleverReach never records who
+   opened or clicked. Belt-and-suspenders: each newsletter's Editor ▸ Campaign Settings ▸
+   Advanced also has open/click checkboxes — leave them off. The site copy promises "no
+   tracking"; a tracking pixel would contradict the privacy page.
+3. Keep **double opt-in** (the GDPR-correct default; it's the Opt-in-E-Mail step in the flow).
+4. Copy the form's embed HTML; point the `<form action="…">` and hidden field names at it.
+   (Done — wired to list a2c5e5fd, keeping the site's own styling, not CleverReach's markup.)
+
+Graduation path if the list ever outgrows Lite or you want full ownership:
+**self-hosted Keila** or **Keila Cloud** (German open-source, EU-resident).
 
 Keep email capture on the **web only**, never in the app binary — collecting it in-app
 would break the "Data Not Collected" label (GTM §8).

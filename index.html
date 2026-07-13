@@ -181,9 +181,15 @@
         <p class="eyebrow">Launching August 2026</p>
         <h2>Get one email when it's out.</h2>
         <p>No cadence, no funnel, no tracking. One message when Cobble Gobble hits the App Store — and the odd note when a new city lands. That's it.</p>
-        <!-- Wire `action` to your own privacy-respecting provider (Buttondown / self-hosted Listmonk).
-             See site/README.md. The page loads NO third-party script; the provider is contacted only on submit. -->
-        <form action="https://buttondown.email/api/emails/embed-subscribe/cobblegobble" method="post" target="_blank">
+        <!-- Wired to CleverReach signup form (list a2c5e5fd…): German/EU data residency,
+             GDPR double opt-in (confirmation email is sent by CleverReach). Keep the account's
+             privacy / anonymised-tracking mode ON so this honours the "no tracking" copy above.
+             CleverReach's only real field is name="email"; email_confirm is their hidden
+             honeypot — leave it empty and hidden. Site styling is kept; CleverReach's own
+             <style>/wrapper markup is intentionally NOT imported. The page loads NO third-party
+             script; CleverReach is contacted only on submit. See site/README.md. -->
+        <form action="https://flow.cleverreach.com/fl/a2c5e5fd-5829-4612-acaf-65f2af37a7d9/confirm" method="post" target="_blank">
+          <input type="text" tabindex="-1" autocomplete="false" style="display:none !important;" class="cr-nope" name="email_confirm" aria-hidden="true">
           <label class="sr-only" for="email" style="position:absolute;left:-9999px">Email address</label>
           <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
           <button class="btn btn-gold" type="submit">Notify me</button>
