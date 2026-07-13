@@ -41,31 +41,22 @@ it too.
 All copy is the **code-backed** copy from `Store/*.md` (internal audit 2026-07-12). If a
 claim changes in the app, change it in `Store/*.md` **and** here.
 
-## Hosting (GitHub Pages, same pattern as the CDN)
+## Hosting — live
 
-Links are **relative**, so the site drops into either host with no code change. Pick one:
+Deployed 2026-07-13 at **https://cobblegobble.app** via GitHub Pages, from the
+public repo **github.com/kueblboe/cobblegobble-site** (root = these files, mirrored
+from `site/`). DNS is A/AAAA on the apex to GitHub's Pages IPs, `www` CNAMEs to
+`kueblboe.github.io` and 301s to the apex, HTTPS is enforced (cert auto-issued by
+GitHub). Canonical/OG URLs in the HTML already assumed this host, so nothing there
+needed changing.
 
-- **Option A — `cobblegobble.app` (root).** Cleanest branding; matches the CDN, which
-  already lives at `cdn.cobblegobble.app`. You need the `.app` domain for the CDN
-  regardless, so this reuses it. Canonical/OG URLs in the HTML already assume this.
-- **Option B — `newworkbydesign.com/cobblegobble/` (subpath).** Matches the URLs the
-  committed `fastlane/metadata/*` currently point at. If you choose this, update the
-  `<link rel="canonical">` and `og:url`/`og:image` absolute URLs in each page's `<head>`
-  (they're the only absolute internal URLs; everything else is relative).
+**To redeploy after editing:** the live repo is a separate git history from this
+one (mirrors `site/`'s contents, not a submodule). After changing anything under
+`site/`, copy the changed files into a checkout of `cobblegobble-site` and push —
+or ask Claude to do it; it did the initial push and knows the layout.
 
-Steps (mirrors `CDN/README.md`): put these files at the repo root of a **public** Pages
-repo, keep the `.nojekyll`, add a `CNAME` with your chosen host, set the custom domain
-in Settings ▸ Pages, enable **Enforce HTTPS**. `.app` is HSTS-preloaded — HTTPS is
-forced automatically, which suits the privacy story.
-
-### Point the store metadata at the live pages (before submitting)
-
-`fastlane/metadata/{en-US,de-DE}/` currently hold `newworkbydesign.com` placeholders.
-After the site is live, set:
-
-- `privacy_url.txt` → `…/privacy.html` (a live privacy page is **required** to submit)
-- `support_url.txt` → `…/support.html` (a reachable support URL is **required**)
-- `marketing_url.txt` → `…/` (the landing page)
+`fastlane/metadata/{en-US,de-DE}/{privacy_url,support_url,marketing_url}.txt` all
+point at the live pages (`.../privacy.html`, `.../support.html`, `.../`).
 
 ## Featuring Nomination — Supplemental Materials mapping
 
