@@ -5,4 +5,5 @@
   <url><loc>https://cobblegobble.app/press.html</loc><priority>0.7</priority></url>
   <url><loc>https://cobblegobble.app/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://cobblegobble.app/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://cobblegobble.app/impressum.html</loc><priority>0.3</priority></url>
 </urlset>
