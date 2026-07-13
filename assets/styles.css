@@ -209,6 +209,12 @@ section{padding-block:clamp(56px,8vw,104px)}
 .city .free{font-size:.74rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em;
   color:var(--on-gold); background:var(--gold-bright); padding:.2em .6em; border-radius:999px}
 .city .meta{font-size:.82rem; color:var(--ink-soft)}
+/* coming soon */
+.soon-head{margin-top:2.8rem}
+.soon-title{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(1.3rem,2.4vw,1.85rem); margin:.15rem 0 .5rem}
+.cities.soon .city{opacity:.55; transition:opacity .18s ease, transform .18s ease, border-color .18s ease}
+.cities.soon .city:hover, .cities.soon .city:focus-within{opacity:1; transform:translateY(-2px); border-color:var(--line-strong)}
+@media (prefers-reduced-motion: reduce){ .cities.soon .city{transition:opacity .18s ease} .cities.soon .city:hover{transform:none} }
 
 /* trust strip */
 .trust{display:flex; flex-wrap:wrap; gap:1.4rem 2.2rem; justify-content:center; align-items:center}
