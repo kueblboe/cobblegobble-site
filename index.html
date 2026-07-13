@@ -6,32 +6,39 @@
 <title>Cobble Gobble — a cozy walking game you play with your phone in your pocket</title>
 <meta name="description" content="Pick a European Old Town and every street becomes a line of dots you collect by walking it. Heads-up, pressure-free, plays offline, Data Not Collected. iPhone, English & German.">
 <link rel="canonical" href="https://cobblegobble.app/">
+<link rel="alternate" hreflang="en" href="https://cobblegobble.app/">
+<link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/">
+<link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/">
 <meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cobble Gobble — gobble up every street">
 <meta property="og:description" content="A cozy walking game you play with your phone in your pocket. Every Old Town is a level. No timers, nothing tracked.">
 <meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
 <meta property="og:url" content="https://cobblegobble.app/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{var f=location.pathname.split('/').pop()||'index.html';if(!localStorage.getItem('cg-lang')&&(navigator.language||'').toLowerCase().indexOf('de')===0){location.replace('/de/'+f)}}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <a class="brand" href="/"><img src="/assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
     <nav class="nav" aria-label="Primary">
       <a href="#how">How it plays</a>
       <a href="#cities">Cities</a>
-      <a href="accessibility.html">Accessibility</a>
-      <a href="privacy.html" class="hide-sm">Privacy</a>
-      <a href="press.html">Press</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/privacy.html" class="hide-sm">Privacy</a>
+      <a href="/press.html">Press</a>
     </nav>
+    <p class="lang-toggle"><a href="/" hreflang="en" lang="en" aria-current="true">EN</a><a href="/de/" hreflang="de" lang="de">DE</a></p>
     <button class="theme-btn" type="button" aria-label="Switch colour theme">☽︎</button>
   </div>
 </header>
@@ -49,7 +56,7 @@
           collect by physically <strong>walking</strong> it — phone in your pocket, sound carrying
           the game. Finish a street and it lights up gold on your map. Landmarks are fruit bonuses.</p>
         <div class="mascot-line">
-          <img src="assets/img/cobble.svg" alt="Cobble, the round cobblestone mascot, gobbling a golden dot" width="76" height="76">
+          <img src="/assets/img/cobble.svg" alt="Cobble, the round cobblestone mascot, gobbling a golden dot" width="76" height="76">
           <p class="mb0"><strong>No timers. No streaks. Nothing to lose.</strong><br>
             <span class="meta-line">The score only ever goes up.</span></p>
         </div>
@@ -64,7 +71,7 @@
 
       <div class="hero-art">
         <figure class="shot reveal">
-          <img src="assets/img/shots/hero-lg.jpg" width="860" height="1868" fetchpriority="high"
+          <img src="/assets/img/shots/hero-lg.jpg" width="860" height="1868" fetchpriority="high"
                alt="Cobble Gobble on an iPhone showing Passau's Old Town, its streets painted gold as they are walked — 77 of 128 streets done, 1,012 of 1,740 dots, score 28,270. Fruit-bonus pins mark landmarks along the three rivers.">
           <figcaption class="cap">Passau, mid-walk — 77 of 128 streets eaten gold.</figcaption>
         </figure>
@@ -111,7 +118,7 @@
             <li><span class="tick">◆</span><span>Audio keeps playing screen-locked, mixes with your music, and self-heals after a call.</span></li>
             <li><span class="tick">◆</span><span><strong>Dynamic Type</strong> and full <strong>English &amp; German</strong>, narration and labels both.</span></li>
           </ul>
-          <p style="margin-top:1.4rem"><a class="btn btn-outline" href="accessibility.html">Read the accessibility story →</a></p>
+          <p style="margin-top:1.4rem"><a class="btn btn-outline" href="/accessibility.html">Read the accessibility story →</a></p>
         </div>
         <div class="reveal">
           <div class="card">
@@ -142,7 +149,7 @@
             <li><span class="tick">◆</span><span>The only network calls are anonymous map-pack downloads, Apple's own StoreKit &amp; Maps, and one non-personal iCloud value (which city you picked as free).</span></li>
             <li><span class="tick">◆</span><span>I genuinely <em>couldn't</em> see where you've walked, even if I wanted to.</span></li>
           </ul>
-          <p style="margin-top:1.4rem"><a class="btn btn-outline" href="privacy.html">Read the privacy policy →</a></p>
+          <p style="margin-top:1.4rem"><a class="btn btn-outline" href="/privacy.html">Read the privacy policy →</a></p>
         </div>
         <div class="reveal" style="order:1">
           <div class="trust card" style="justify-content:flex-start; gap:1.2rem 2rem">
@@ -166,10 +173,10 @@
       <p class="lede reveal">Each city is hand-checked, one street at a time. Claim any one as your free
         city; every other is a one-time purchase you keep for good — Family Sharing included. More cities are on the way.</p>
       <div class="cities reveal" style="margin-top:2rem">
-        <div class="city"><span class="glyph"><img src="assets/img/glyph-passau.svg" alt="" width="52" height="52"></span><span class="name">Passau</span><span class="meta">Bavaria</span></div>
-        <div class="city"><span class="glyph"><img src="assets/img/glyph-prague.svg" alt="" width="52" height="52"></span><span class="name">Prague</span><span class="meta">Czechia</span></div>
-        <div class="city"><span class="glyph"><img src="assets/img/glyph-bologna.svg" alt="" width="52" height="52"></span><span class="name">Bologna</span><span class="meta">Italy</span></div>
-        <div class="city"><span class="glyph"><img src="assets/img/glyph-munich.svg" alt="" width="52" height="52"></span><span class="name">Munich</span><span class="meta">Bavaria</span></div>
+        <div class="city"><span class="glyph"><img src="/assets/img/glyph-passau.svg" alt="" width="52" height="52"></span><span class="name">Passau</span><span class="meta">Bavaria</span></div>
+        <div class="city"><span class="glyph"><img src="/assets/img/glyph-prague.svg" alt="" width="52" height="52"></span><span class="name">Prague</span><span class="meta">Czechia</span></div>
+        <div class="city"><span class="glyph"><img src="/assets/img/glyph-bologna.svg" alt="" width="52" height="52"></span><span class="name">Bologna</span><span class="meta">Italy</span></div>
+        <div class="city"><span class="glyph"><img src="/assets/img/glyph-munich.svg" alt="" width="52" height="52"></span><span class="name">Munich</span><span class="meta">Bavaria</span></div>
       </div>
 
       <!-- REQUEST-A-CITY. Seasonal pre-launch wording. After launch, swap two lines for the
@@ -209,7 +216,7 @@
           <button class="btn btn-gold" type="submit">Notify me</button>
         </form>
         <p class="fineprint">Your address is stored by my newsletter provider, on the web — never inside the app.
-          Unsubscribe in one click. See the <a href="privacy.html">privacy policy</a>.</p>
+          Unsubscribe in one click. See the <a href="/privacy.html">privacy policy</a>.</p>
       </div>
     </div>
   </section>
@@ -219,21 +226,21 @@
 <footer class="site-foot">
   <div class="wrap">
     <div>
-      <div class="foot-brand"><img src="assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <div class="foot-brand"><img src="/assets/img/cobble.svg" alt="">Cobble Gobble</div>
       <p class="meta-line mb0">A cozy, heads-up, pressure-free city-walking game.<br>Made with love in Bavaria.</p>
     </div>
     <nav aria-label="Site">
       <h2>The game</h2>
       <a href="#how">How it plays</a>
       <a href="#cities">Cities</a>
-      <a href="accessibility.html">Accessibility</a>
-      <a href="press.html">Press &amp; media</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/press.html">Press &amp; media</a>
     </nav>
     <nav aria-label="More">
       <h2>Fine print</h2>
-      <a href="privacy.html">Privacy policy</a>
-      <a href="support.html">Help &amp; support</a>
-      <a href="impressum.html">Impressum</a>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/support.html">Help &amp; support</a>
+      <a href="/impressum.html">Impressum</a>
       <a href="mailto:hello@newworkbydesign.com">hello@newworkbydesign.com</a>
     </nav>
     <div class="colophon">
@@ -243,6 +250,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js" defer></script>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>

@@ -41,6 +41,32 @@ it too.
 All copy is the **code-backed** copy from `Store/*.md` (internal audit 2026-07-12). If a
 claim changes in the app, change it in `Store/*.md` **and** here.
 
+## Localization — English + German
+
+Every page above exists in both languages. English lives at the site root; German mirrors
+it under **`/de/`** with the same filenames (`/de/`, `/de/accessibility.html`,
+`/de/press.html`, `/de/privacy.html`, `/de/support.html`, `/de/impressum.html`). Assets are
+shared at `/assets/`; every page references them **root-absolute** (`/assets/…`), so the
+`/de/` pages reuse the same CSS/JS/images.
+
+- **Switching:** a persistent `EN · DE` pill in the header links each page to its own
+  counterpart. It's a plain `<a href>`, so it works with JavaScript off.
+- **Auto-detect:** English pages carry a tiny inline `<head>` script (same `localStorage`
+  pattern as the theme toggle). On a first visit with no saved choice, a German-preferring
+  browser is redirected once to the `/de/` counterpart. German pages carry **no** redirect
+  (they're the destination — no loop). Clicking the toggle records the choice in
+  `localStorage['cg-lang']`, which then suppresses auto-detect. With JS off, everyone lands
+  on English and uses the visible toggle.
+- **SEO:** each page sets `<html lang>`, a self-`canonical`, and `hreflang` alternates
+  (`en`, `de`, `x-default`=EN). `sitemap.xml` lists all EN + DE URLs with `xhtml:link`
+  hreflang pairs.
+- **The Impressum** is German by law; both `/impressum.html` and `/de/impressum.html` keep
+  the German legal body — only the surrounding chrome/heading differs.
+- **Keep the two languages in sync:** a claim that changes on an English page changes on its
+  `/de/` mirror too (and in `Store/*.md`). German voice is anchored to
+  `fastlane/metadata/de-DE/*`.
+- **Deploy:** `make publish-site` needs no change — `rsync -a` mirrors the `/de/` subtree.
+
 ## Hosting — live
 
 Deployed 2026-07-13 at **https://cobblegobble.app** via GitHub Pages, from the
@@ -112,7 +138,7 @@ would break the "Data Not Collected" label (GTM §8).
 
 ## Maintenance notes
 
-- **“Last updated” date** on `privacy.html` (EN + DE) — set it on publish and whenever the policy changes.
+- **“Last updated” date** on `privacy.html` **and** `de/privacy.html` — set both on publish and whenever the policy changes.
 - **Assets are regenerable** from the repo: city glyphs are extracted from
   `Previews/<city>.preview.html`; the gallery screenshots are downscaled from
   `Store/screenshots/raw/`; `og.png` is composed from the mascot + the site fonts. The

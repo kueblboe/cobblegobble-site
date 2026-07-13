@@ -6,30 +6,35 @@
 <title>Accessibility — Cobble Gobble</title>
 <meta name="description" content="Cobble Gobble is a cozy city-walking game designed to be played without looking at the screen — one of the very few games a blind or low-vision player can play the same way everyone else does.">
 <link rel="canonical" href="https://cobblegobble.app/accessibility.html">
+<link rel="alternate" hreflang="en" href="https://cobblegobble.app/accessibility.html">
+<link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/accessibility.html">
 <meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cobble Gobble — Accessibility">
 <meta property="og:description" content="Designed to be played without looking. Audio-first, VoiceOver-native, pressure-free.">
 <meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{var f=location.pathname.split('/').pop()||'index.html';if(!localStorage.getItem('cg-lang')&&(navigator.language||'').toLowerCase().indexOf('de')===0){location.replace('/de/'+f)}}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <a class="brand" href="/"><img src="/assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
     <nav class="nav" aria-label="Primary">
-      <a href="index.html#how">How it plays</a>
-      <a href="index.html#cities">Cities</a>
-      <a href="accessibility.html" aria-current="page">Accessibility</a>
-      <a href="privacy.html" class="hide-sm">Privacy</a>
-      <a href="press.html">Press</a>
+      <a href="/index.html#how">How it plays</a>
+      <a href="/index.html#cities">Cities</a>
+      <a href="/accessibility.html" aria-current="page">Accessibility</a>
+      <a href="/privacy.html" class="hide-sm">Privacy</a>
+      <a href="/press.html">Press</a>
     </nav>
+    <p class="lang-toggle"><a href="/accessibility.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="/de/accessibility.html" hreflang="de" lang="de">DE</a></p>
     <button class="theme-btn" type="button" aria-label="Switch colour theme">☽︎</button>
   </div>
 </header>
@@ -113,21 +118,21 @@
 <footer class="site-foot">
   <div class="wrap">
     <div>
-      <div class="foot-brand"><img src="assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <div class="foot-brand"><img src="/assets/img/cobble.svg" alt="">Cobble Gobble</div>
       <p class="meta-line mb0">A cozy, heads-up, pressure-free city-walking game.<br>Made with love in Bavaria.</p>
     </div>
     <nav aria-label="Site">
       <h2>The game</h2>
-      <a href="index.html#how">How it plays</a>
-      <a href="index.html#cities">Cities</a>
-      <a href="accessibility.html">Accessibility</a>
-      <a href="press.html">Press &amp; media</a>
+      <a href="/index.html#how">How it plays</a>
+      <a href="/index.html#cities">Cities</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/press.html">Press &amp; media</a>
     </nav>
     <nav aria-label="More">
       <h2>Fine print</h2>
-      <a href="privacy.html">Privacy policy</a>
-      <a href="support.html">Help &amp; support</a>
-      <a href="impressum.html">Impressum</a>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/support.html">Help &amp; support</a>
+      <a href="/impressum.html">Impressum</a>
       <a href="mailto:hello@newworkbydesign.com">hello@newworkbydesign.com</a>
     </nav>
     <div class="colophon">
@@ -137,6 +142,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js" defer></script>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barrierefreiheit — Cobble Gobble</title>
+<meta name="description" content="Cobble Gobble ist ein gemütliches Altstadt-Lauf-Spiel, gebaut zum Spielen ohne Blick auf den Bildschirm — eines der ganz wenigen Spiele, die blinde und sehbehinderte Menschen genauso spielen wie alle anderen.">
+<link rel="canonical" href="https://cobblegobble.app/de/accessibility.html">
+<link rel="alternate" hreflang="en" href="https://cobblegobble.app/accessibility.html">
+<link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/accessibility.html">
+<meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cobble Gobble — Barrierefreiheit">
+<meta property="og:description" content="Zum Spielen gebaut, ohne hinzusehen. Ton zuerst, VoiceOver-nativ, druckfrei.">
+<meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/de/"><img src="/assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="/de/#how">So spielst du</a>
+      <a href="/de/#cities">Städte</a>
+      <a href="/de/accessibility.html" aria-current="page">Barrierefreiheit</a>
+      <a href="/de/privacy.html" class="hide-sm">Datenschutz</a>
+      <a href="/de/press.html">Presse</a>
+    </nav>
+    <p class="lang-toggle"><a href="/accessibility.html" hreflang="en" lang="en">EN</a><a href="/de/accessibility.html" hreflang="de" lang="de" aria-current="true">DE</a></p>
+    <button class="theme-btn" type="button" aria-label="Farbschema wechseln">☽︎</button>
+  </div>
+</header>
+
+<main id="main">
+  <section>
+    <div class="wrap narrow prose">
+      <p class="eyebrow">Barrierefreiheit</p>
+      <h1>Zum Spielen gebaut — <span class="serif-i">ohne hinzusehen.</span></h1>
+      <p class="lede">Cobble Gobble ist ein gemütliches Altstadt-Lauf-Spiel, gebaut zum Spielen mit dem
+        Handy in der Tasche — was es zu einem der ganz wenigen Spiele macht, die blinde und sehbehinderte
+        Menschen genauso spielen wie alle anderen: die Ohren am Spiel, unterwegs in einer echten Stadt.</p>
+      <p class="meta-line">Jede Aussage auf dieser Seite ist durch den ausgelieferten Code belegt (interne Prüfung, Juli 2026).</p>
+
+      <h2>Die Idee</h2>
+      <p>Du wählst eine Stadt. Jede Straße ihrer Altstadt ist mit Punkten gesäumt. Du gehst die Straße, du
+        sammelst die Punkte, die Straße leuchtet golden auf deiner Karte. Sehenswürdigkeiten sind
+        Frucht-Bonusse. Das ist das ganze Spiel.</p>
+      <p>Die tragende Design-Säule ist <strong>Kopf hoch</strong>: Das Handy bleibt in der Tasche, und
+        <strong>der Ton trägt das Spiel</strong>. Nichts auf dem Bildschirm braucht je deine Aufmerksamkeit.
+        Ich habe das für sehende Geher gebaut, die aufschauen und die Stadt genießen wollen — aber es
+        bedeutet, dass die Kern-Schleife von Tag eins an auf Ton ausgelegt war, nicht nachträglich
+        angeflanscht. Für jemanden, der sich über den Ton orientiert, ist das Spiel kein geringeres
+        Erlebnis. Es ist das <em>eigentlich gemeinte</em>.</p>
+
+      <h2>Was blinde und sehbehinderte Menschen tatsächlich bekommen</h2>
+      <div class="card stack">
+        <p class="mb0"><strong>Gesprochene Ansagen zu jedem wichtigen Moment.</strong> Ein optionaler
+          Schalter „Gesprochene Hinweise“ liest fertige Straßen, Frucht-Bonusse und geschaffte Level laut
+          vor. Punkte werden bewusst <em>nicht</em> angesagt — das würde ununterbrochen plappern — so bleibt
+          der Ton ein klarer Klang für Punkte und ein gesprochener Satz für das, was eine Ansage wert ist.</p>
+        <p class="mb0"><strong>Es respektiert deine VoiceOver-Einstellungen.</strong> Läuft VoiceOver,
+          richten sich die Ansagen nach <em>deinem</em> Sprechtempo und deiner Stimme, statt sie zu übergehen.</p>
+        <p class="mb0"><strong>Ein eigener, nicht-visueller Bildschirm „Straßen in der Nähe“.</strong> Statt
+          die Karte VoiceOver-tauglich zu erzwingen, habe ich die barrierefreie Oberfläche als Liste gebaut:
+          jede verbleibende Straße, die nächste zuerst, jede als ein klarer Satz —
+          <span class="serif-i">„Höllgasse, 120&nbsp;Meter nordöstlich, 3&nbsp;von&nbsp;14&nbsp;Punkten.“</span>
+          Entfernungen sind als Wörter ausgeschrieben („120 Meter“, nicht „120 m“, was eine Sprachausgabe
+          als Buchstaben liest). Richtungen sind <strong>Himmelsrichtungs-Wörter</strong>, bewusst gewählt,
+          weil sie stimmen, wenn das Handy in der Tasche steckt — ohne Geräteausrichtung.</p>
+        <p class="mb0"><strong>Hinweise und Werte, nicht nur Beschriftungen.</strong> Jedes Bedienelement auf
+          der Karte — Start und Pause, Fortsetzen, „Statistik &amp; Teilen“, die Schaltfläche „Straßen in der
+          Nähe“ — trägt einen gesprochenen VoiceOver-Hinweis, und die Fortschrittsleiste spricht ihren Wert
+          („77 von 128 Straßen“), sodass der ganze Bildschirm per Gehör bedienbar ist.</p>
+        <p class="mb0"><strong>Ton, der den Alltag übersteht.</strong> Der Spielton läuft bei gesperrtem
+          Bildschirm und Handy in der Tasche weiter, mischt sich mit deinem Podcast oder deiner Musik, statt
+          sie zu stoppen, und erholt sich von selbst nach einem Anruf — damit jemand, der nur auf den Ton
+          angewiesen ist, nicht den Rest des Wegs in Stille sitzt.</p>
+        <p class="mb0"><strong>Deutsch und Englisch</strong>, Ansagen wie Beschriftungen, passend zu deiner
+          Gerätesprache und in einer passenden Stimme gesprochen.</p>
+      </div>
+
+      <h2>Über Blindheit hinaus</h2>
+      <ul>
+        <li><strong>Dynamic Type:</strong> Texte nutzen durchgängig semantische Schriftstile, skalieren also mit der System-Textgröße mit.</li>
+        <li><strong>Druckfrei ist kognitive Barrierefreiheit.</strong> Keine Timer, keine Serien, kein Verfall, keine Bestenlisten, nichts zu verlieren — der Punktestand steigt nur. Für Menschen mit Ängsten, Empfindlichkeit gegenüber kognitiver Last oder ADHS ist das Fehlen von Druck das eigentliche Feature.</li>
+        <li><strong>Ein Rückfall für GPS-Funklöcher („als gegangen markieren“)</strong> gibt die volle Wertung — jeden Punkt plus den Straßen-Bonus — damit niemand, dessen Empfang in einer steinernen Gasse abreißt, je feststeckt oder bestraft wird.</li>
+        <li><strong>Bewegung reduzieren:</strong> Schalte es ein, und die Feier sowie der Sammel-Puls auf der Karte halten still — nichts hüpft, ploppt oder wiederholt sich.</li>
+        <li><strong>Ohne Farbe unterscheiden:</strong> Von Hand markierte Straßen bekommen eine gestrichelte Linie, nicht nur ein blasseres Gold, sodass die Unterscheidung „als gegangen markiert“ nie allein auf Farbe beruht.</li>
+      </ul>
+
+      <h2>Datenschutz, weil er zur Geschichte gehört</h2>
+      <p><strong>Keine Daten erfasst.</strong> Kein Konto, keine Analyse, keine Werbung, keine Tracking-SDKs,
+        keine Werbe-IDs. Dein Standort verlässt nie dein Handy. (Ein einziger, nicht-personenbezogener Wert —
+        welche Stadt du gratis gewählt hast — wird in deine private iCloud gespiegelt, damit er ein neues
+        Handy übersteht; ich kann ihn nicht lesen.) Für viele Menschen mit Behinderung, die überproportional
+        profiliert und getrackt werden, ist „ich kann dich wirklich nicht sehen“ keine Fußnote.</p>
+
+      <hr class="rule" style="margin:2.4rem 0 1.6rem">
+      <dl class="facts">
+        <dt>Plattform</dt><dd>iPhone, iOS&nbsp;17+</dd>
+        <dt>Sprachen</dt><dd>Deutsch &amp; Englisch (Ansagen und Beschriftungen)</dd>
+        <dt>Preis</dt><dd>Eine Stadt gratis; weitere ein einmaliger Kauf</dd>
+        <dt>Offline</dt><dd>Eine gekaufte Stadt läuft vollständig offline</dd>
+        <dt>Presse &amp; Tester</dt><dd><a href="mailto:press@newworkbydesign.com">press@newworkbydesign.com</a></dd>
+        <dt>Macher</dt><dd>Manuel (Bayern, Einzelentwickler)</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand"><img src="/assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <p class="meta-line mb0">Ein gemütliches, druckfreies Lauf-Spiel durch die Altstadt.<br>Mit Liebe in Bayern gemacht.</p>
+    </div>
+    <nav aria-label="Seiten">
+      <h2>Das Spiel</h2>
+      <a href="/de/#how">So spielst du</a>
+      <a href="/de/#cities">Städte</a>
+      <a href="/de/accessibility.html">Barrierefreiheit</a>
+      <a href="/de/press.html">Presse &amp; Medien</a>
+    </nav>
+    <nav aria-label="Mehr">
+      <h2>Rechtliches</h2>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <a href="/de/support.html">Hilfe &amp; Support</a>
+      <a href="/de/impressum.html">Impressum</a>
+      <a href="mailto:hello@newworkbydesign.com">hello@newworkbydesign.com</a>
+    </nav>
+    <div class="colophon">
+      <span>© 2026 Cobble Gobble</span>
+      <span>Kartendaten © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende (ODbL)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

@@ -239,6 +239,13 @@ section{padding-block:clamp(56px,8vw,104px)}
 .lang-switch{display:inline-flex; gap:.4rem; border:1px solid var(--line-strong); border-radius:12px; padding:.25rem; margin-bottom:1.4rem}
 .lang-switch a{text-decoration:none; padding:.35em .9em; border-radius:9px; font-weight:600; color:var(--ink-soft)}
 .lang-switch a[aria-current="true"]{background:var(--gold); color:var(--on-gold)}
+/* Header language toggle (EN · DE) — a compact bordered pill beside the theme button. */
+.lang-toggle{display:inline-flex; gap:.1rem; margin:0; border:1px solid var(--line-strong);
+  border-radius:10px; padding:.15rem}
+.lang-toggle a{text-decoration:none; font-weight:700; font-size:.78rem; letter-spacing:.03em;
+  padding:.32em .5em; border-radius:7px; color:var(--ink-soft); line-height:1}
+.lang-toggle a:hover{color:var(--ink)}
+.lang-toggle a[aria-current="true"]{background:var(--gold); color:var(--on-gold)}
 .meta-line{color:var(--ink-soft); font-size:.9rem}
 .updated{font-size:.85rem; color:var(--ink-soft)}
 

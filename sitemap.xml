@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cobblegobble.app/</loc><priority>1.0</priority></url>
-  <url><loc>https://cobblegobble.app/accessibility.html</loc><priority>0.8</priority></url>
-  <url><loc>https://cobblegobble.app/press.html</loc><priority>0.7</priority></url>
-  <url><loc>https://cobblegobble.app/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://cobblegobble.app/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://cobblegobble.app/impressum.html</loc><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://cobblegobble.app/</loc><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/"/></url>
+  <url><loc>https://cobblegobble.app/de/</loc><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/"/></url>
+  <url><loc>https://cobblegobble.app/accessibility.html</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/accessibility.html"/></url>
+  <url><loc>https://cobblegobble.app/de/accessibility.html</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/accessibility.html"/></url>
+  <url><loc>https://cobblegobble.app/press.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/press.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/press.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/press.html"/></url>
+  <url><loc>https://cobblegobble.app/de/press.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/press.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/press.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/press.html"/></url>
+  <url><loc>https://cobblegobble.app/privacy.html</loc><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/privacy.html"/></url>
+  <url><loc>https://cobblegobble.app/de/privacy.html</loc><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/privacy.html"/></url>
+  <url><loc>https://cobblegobble.app/support.html</loc><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/support.html"/></url>
+  <url><loc>https://cobblegobble.app/de/support.html</loc><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/support.html"/></url>
+  <url><loc>https://cobblegobble.app/impressum.html</loc><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/impressum.html"/></url>
+  <url><loc>https://cobblegobble.app/de/impressum.html</loc><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/impressum.html"/></url>
 </urlset>

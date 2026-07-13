@@ -43,4 +43,14 @@
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
     items.forEach(function (el) { io.observe(el); });
   }
+
+  /* Language toggle — remember the explicit choice (first-party, not tracking).
+     The link still navigates on its own (no preventDefault), so switching works
+     with JS disabled; this only records the pick so the auto-detect redirect on
+     English pages won't override it on a later visit. */
+  document.querySelectorAll(".lang-toggle a[hreflang]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      try { localStorage.setItem("cg-lang", a.getAttribute("hreflang")); } catch (e) {}
+    });
+  });
 })();
