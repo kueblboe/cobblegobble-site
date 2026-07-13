@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cobble, the cobblestone mascot, gobbling a golden dot">
+  <title>Cobble, the cobblestone mascot</title>
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C7BDAE"/>
+      <stop offset="1" stop-color="#8C8070"/>
+    </linearGradient>
+    <radialGradient id="dotGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD97A"/>
+      <stop offset="1" stop-color="#F5940D"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="120" cy="196" rx="70" ry="12" fill="#000" opacity="0.14"/>
+
+  <!-- legs -->
+  <rect x="98" y="150" width="16" height="34" rx="8" fill="#6F6456"/>
+  <rect x="126" y="150" width="16" height="34" rx="8" fill="#6F6456"/>
+
+  <!-- gobbled dots trailing toward the mouth -->
+  <circle cx="34" cy="118" r="5" fill="#FFB81A" opacity="0.55"/>
+  <circle cx="54" cy="118" r="6.5" fill="#FFB81A" opacity="0.8"/>
+  <circle cx="74" cy="118" r="8.5" fill="url(#dotGlow)"/>
+
+  <!-- pebble body (from MascotView PebbleShape) -->
+  <path d="M120 44 C177.6 44 200 63.2 200 99.2 C200 140 174.4 164 123.2 164 C62.4 164 40 142.4 40 106.4 C40 65.6 65.6 44 120 44 Z"
+        fill="url(#stone)" stroke="#6F6456" stroke-width="2.5"/>
+  <!-- stone speckles -->
+  <g fill="#6F6456" opacity="0.38">
+    <circle cx="96" cy="82" r="5"/>
+    <circle cx="150" cy="76" r="4"/>
+    <circle cx="112" cy="112" r="3.4"/>
+    <circle cx="164" cy="120" r="4.6"/>
+    <circle cx="76" cy="120" r="3.6"/>
+  </g>
+
+  <!-- eyes -->
+  <g>
+    <circle cx="108" cy="94" r="9" fill="#29201B"/>
+    <circle cx="105.5" cy="90.5" r="3" fill="#fff"/>
+    <circle cx="140" cy="94" r="9" fill="#29201B"/>
+    <circle cx="137.5" cy="90.5" r="3" fill="#fff"/>
+  </g>
+
+  <!-- open happy gobble mouth -->
+  <path d="M100 116 Q124 112 148 116 Q146 142 124 146 Q102 142 100 116 Z" fill="#3A2620"/>
+  <!-- little tongue -->
+  <ellipse cx="124" cy="140" rx="13" ry="6" fill="#DB6B70"/>
+</svg>

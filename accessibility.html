@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility — Cobble Gobble</title>
+<meta name="description" content="Cobble Gobble is a cozy city-walking game designed to be played without looking at the screen — one of the very few games a blind or low-vision player can play the same way everyone else does.">
+<link rel="canonical" href="https://cobblegobble.app/accessibility.html">
+<meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cobble Gobble — Accessibility">
+<meta property="og:description" content="Designed to be played without looking. Audio-first, VoiceOver-native, pressure-free.">
+<meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#how">How it plays</a>
+      <a href="index.html#cities">Cities</a>
+      <a href="accessibility.html" aria-current="page">Accessibility</a>
+      <a href="privacy.html" class="hide-sm">Privacy</a>
+      <a href="press.html">Press</a>
+    </nav>
+    <button class="theme-btn" type="button" aria-label="Switch colour theme">☽︎</button>
+  </div>
+</header>
+
+<main id="main">
+  <section>
+    <div class="wrap narrow prose">
+      <p class="eyebrow">Accessibility</p>
+      <h1>Designed to be played <span class="serif-i">without looking.</span></h1>
+      <p class="lede">Cobble Gobble is a cozy city-walking game built to be played with the phone in a
+        pocket — which makes it one of the very few games a blind or low-vision player can play the
+        same way everyone else does: ears on the game, walking a real city.</p>
+      <p class="meta-line">Every claim on this page is backed by the shipping code (internal audit, July 2026).</p>
+
+      <h2>The idea</h2>
+      <p>You pick a city. Every street of its old town is lined with dots. You walk the street, you
+        collect the dots, the street lights up gold on your map. Landmarks are fruit bonuses. That's
+        the whole game.</p>
+      <p>The design pillar is <strong>heads-up</strong>: the phone stays pocketed and <strong>sound
+        carries the play</strong>. Nothing on screen ever needs your attention. I built that for
+        sighted walkers who want to look up and enjoy the city — but it means the core loop was
+        audio-first from day one, not retrofitted. For a player who navigates by sound, the game
+        isn't a lesser experience. It's the <em>intended</em> one.</p>
+
+      <h2>What a blind or low-vision player actually gets</h2>
+      <div class="card stack">
+        <p class="mb0"><strong>Spoken narration of every meaningful moment.</strong> An opt-in
+          “Spoken updates” toggle reads street completions, fruit bonuses, and level clears aloud.
+          Dots are deliberately <em>not</em> spoken — that would chatter constantly — so the audio
+          stays a clean chime for dots and a spoken sentence for the things worth announcing.</p>
+        <p class="mb0"><strong>It respects your VoiceOver settings.</strong> When VoiceOver is
+          running, narration defers to <em>your</em> speaking rate and voice rather than overriding them.</p>
+        <p class="mb0"><strong>A dedicated non-visual “Nearby streets” screen.</strong> Instead of
+          forcing the map to be VoiceOver-navigable, I built the accessible surface as a list:
+          every remaining street, nearest first, each read as one clean sentence —
+          <span class="serif-i">“Höllgasse, 120&nbsp;meters northeast, 3&nbsp;of&nbsp;14&nbsp;dots.”</span>
+          Distances are spelled out as words (“120 meters”, not “120 m”, which a screen reader reads
+          as a letter). Directions are <strong>cardinal compass words</strong> chosen specifically
+          because they stay true with the phone in your pocket — no device heading required.</p>
+        <p class="mb0"><strong>Hints and values, not just labels.</strong> Every control on the map —
+          start and pause, resume, “Stats &amp; share,” the Nearby-streets button — carries a spoken
+          VoiceOver hint, and the progress bar speaks its value (“77 of 128 streets”), so the whole
+          screen is navigable by ear.</p>
+        <p class="mb0"><strong>Audio that survives real life.</strong> Gameplay sound keeps playing
+          with the screen locked and the phone pocketed, mixes with your podcast or music instead of
+          stopping it, and self-heals after a phone call so a speech-only player isn't left in
+          silence for the rest of the walk.</p>
+        <p class="mb0"><strong>English and German</strong>, narration and labels both, matched to
+          your device language and spoken in a matching voice.</p>
+        <p class="mb0"><strong>Haptics</strong> for players who use them — a light tap on each event
+          — offered honestly as a <em>foreground</em> extra, never sold as pocketed feedback (iOS
+          delivers no haptics to a locked, pocketed app, and I don't pretend otherwise).</p>
+      </div>
+
+      <h2>Beyond blindness</h2>
+      <ul>
+        <li><strong>Dynamic Type:</strong> text uses semantic type styles throughout, so it scales with the system text-size setting.</li>
+        <li><strong>Pressure-free is cognitive accessibility.</strong> No timers, no streaks, no expiry, no leaderboards, nothing to lose — the score only ever goes up. For players with anxiety, cognitive-load sensitivity, or ADHD, the absence of pressure is the feature.</li>
+        <li><strong>A GPS dead-zone fallback (“mark as walked”)</strong> gives full credit — every dot plus the street bonus — so a player whose signal drops in a stone alley is never stuck or penalized.</li>
+        <li><strong>Reduce Motion:</strong> turn it on and the celebration and the map's collect-pulse hold still — nothing bounces, pops, or replays.</li>
+        <li><strong>Differentiate Without Color:</strong> streets you mark by hand get a dashed stroke, not just a paler gold, so the “marked as walked” distinction never rests on color alone.</li>
+      </ul>
+
+      <h2>Privacy, because it's part of the story</h2>
+      <p><strong>Data Not Collected.</strong> No accounts, no analytics, no ads, no tracking SDKs, no
+        advertising identifiers. Your location never leaves your phone. (One non-personal value —
+        which city you picked as your free one — is mirrored to your own private iCloud so it survives
+        a new phone; I can't read it.) For many disabled users, who are disproportionately profiled
+        and tracked, “I genuinely can't see you” is not a footnote.</p>
+
+      <h2>The honest part, <span class="serif-i">kept current</span></h2>
+      <p>I keep this page honest by naming what isn't perfect yet — not by pretending there's nothing.
+        The three gaps this section listed at first draft have now shipped: <strong>Reduce Motion</strong>,
+        <strong>Differentiate Without Color</strong>, and richer <strong>VoiceOver</strong> hints and
+        values (all above). When the next gap turns up — and it will — it goes here, in the open, rather
+        than under the rug.</p>
+
+      <hr class="rule" style="margin:2.4rem 0 1.6rem">
+      <dl class="facts">
+        <dt>Platform</dt><dd>iPhone, iOS&nbsp;17+</dd>
+        <dt>Languages</dt><dd>English &amp; German (narration and labels)</dd>
+        <dt>Pricing</dt><dd>One free city; others a one-time purchase</dd>
+        <dt>Offline</dt><dd>A city you own plays fully offline</dd>
+        <dt>Press &amp; reviewers</dt><dd><a href="mailto:press@newworkbydesign.com">press@newworkbydesign.com</a></dd>
+        <dt>Maker</dt><dd>Manuel — New Work by Design (Bavaria, solo developer)</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand"><img src="assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <p class="meta-line mb0">A cozy, heads-up, pressure-free city-walking game.<br>Made by one person in Bavaria.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>The game</h2>
+      <a href="index.html#how">How it plays</a>
+      <a href="index.html#cities">Cities</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="press.html">Press &amp; media</a>
+    </nav>
+    <nav aria-label="More">
+      <h2>Fine print</h2>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="support.html">Help &amp; support</a>
+      <a href="mailto:hello@newworkbydesign.com">hello@newworkbydesign.com</a>
+    </nav>
+    <div class="colophon">
+      <span>© 2026 New Work by Design · Cobble Gobble</span>
+      <span>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
