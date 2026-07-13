@@ -50,10 +50,22 @@ from `site/`). DNS is A/AAAA on the apex to GitHub's Pages IPs, `www` CNAMEs to
 GitHub). Canonical/OG URLs in the HTML already assumed this host, so nothing there
 needed changing.
 
-**To redeploy after editing:** the live repo is a separate git history from this
-one (mirrors `site/`'s contents, not a submodule). After changing anything under
-`site/`, copy the changed files into a checkout of `cobblegobble-site` and push —
-or ask Claude to do it; it did the initial push and knows the layout.
+**To redeploy after editing:** `make publish-site` (mirrors the CDN's
+`publish-cdn` pattern). It rsyncs `site/` into a local clone of the
+`cobblegobble-site` Pages repo and pushes if anything changed:
+
+```sh
+git clone git@github.com:kueblboe/cobblegobble-site.git ../cobblegobble-site   # one-time
+make publish-site                                                              # every redeploy
+```
+
+`SITE_REPO` defaults to `../cobblegobble-site` (sibling of this project's root,
+same convention as `CDN_REPO`); override it if your clone lives elsewhere:
+`make publish-site SITE_REPO=/path/to/clone`. `site/CNAME` is the source of
+truth for the custom domain and round-trips with everything else — don't edit
+it only on GitHub (the Pages UI can rewrite it while you're configuring the
+domain; `publish-site` will just push it back to whatever's in `site/CNAME`
+next time you run it, so keep the two in sync if you ever change domains).
 
 `fastlane/metadata/{en-US,de-DE}/{privacy_url,support_url,marketing_url}.txt` all
 point at the live pages (`.../privacy.html`, `.../support.html`, `.../`).
