@@ -61,10 +61,18 @@
 
       <h2>What a blind or low-vision player actually gets</h2>
       <div class="card stack">
-        <p class="mb0"><strong>Spoken narration of every meaningful moment.</strong> An opt-in
-          “Spoken updates” toggle reads street completions, fruit bonuses, and level clears aloud.
-          Dots are deliberately <em>not</em> spoken — that would chatter constantly — so the audio
-          stays a clean chime for dots and a spoken sentence for the things worth announcing.</p>
+        <p class="mb0"><strong>Spoken narration of every meaningful moment, on from the first walk.</strong>
+          “Spoken updates” reads street completions, fruit bonuses, and level clears aloud — and it
+          switches itself <em>on automatically</em> when your phone already uses spoken content
+          (VoiceOver, Speak Screen, or Speak Selection), so there's no toggle to hunt for before the
+          game will talk to you. Sighted players who don't use those keep a quiet phone by default;
+          either way you can change it any time in Settings. Dots are deliberately <em>not</em>
+          spoken — that would chatter constantly — so the audio stays a clean chime for dots and a
+          spoken sentence for the things worth announcing.</p>
+        <p class="mb0"><strong>The game tells you what it's doing.</strong> It speaks its own state as
+          it changes — taking a breather when you stop, back to gobbling when you move again, a ride
+          detected, a walk saved, or GPS gone fuzzy — so a player whose phone is in a pocket never has
+          to wonder whether it's still tracking.</p>
         <p class="mb0"><strong>It respects your VoiceOver settings.</strong> When VoiceOver is
           running, narration defers to <em>your</em> speaking rate and voice rather than overriding them.</p>
         <p class="mb0"><strong>A dedicated non-visual “Nearby streets” screen.</strong> Instead of
@@ -74,6 +82,11 @@
           Distances are spelled out as words (“120 meters”, not “120 m”, which a screen reader reads
           as a letter). Directions are <strong>cardinal compass words</strong> chosen specifically
           because they stay true with the phone in your pocket — no device heading required.</p>
+        <p class="mb0"><strong>The GPS dead-zone fallback works without sight.</strong> When your
+          signal drops in a stone alley, you can mark a street walked for full credit — and you do it
+          straight from the Nearby-streets list (swipe a row, or use the VoiceOver actions rotor),
+          not by aiming a press at a map you can't see. The same list is where you report a wrong
+          street, too.</p>
         <p class="mb0"><strong>Hints and values, not just labels.</strong> Every control on the map —
           start and pause, resume, “Stats &amp; share,” the Nearby-streets button — carries a spoken
           VoiceOver hint, and the progress bar speaks its value (“77 of 128 streets”), so the whole
@@ -89,8 +102,8 @@
       <h2>Beyond blindness</h2>
       <ul>
         <li><strong>Dynamic Type:</strong> text uses semantic type styles throughout, so it scales with the system text-size setting.</li>
+        <li><strong>Contrast:</strong> buttons and text-on-colour meet the WCAG AA contrast ratio, checked in both light and dark mode.</li>
         <li><strong>Pressure-free is cognitive accessibility.</strong> No timers, no streaks, no expiry, no leaderboards, nothing to lose — the score only ever goes up. For players with anxiety, cognitive-load sensitivity, or ADHD, the absence of pressure is the feature.</li>
-        <li><strong>A GPS dead-zone fallback (“mark as walked”)</strong> gives full credit — every dot plus the street bonus — so a player whose signal drops in a stone alley is never stuck or penalized.</li>
         <li><strong>Reduce Motion:</strong> turn it on and the celebration and the map's collect-pulse hold still — nothing bounces, pops, or replays.</li>
         <li><strong>Differentiate Without Color:</strong> streets you mark by hand get a dashed stroke, not just a paler gold, so the “marked as walked” distinction never rests on color alone.</li>
       </ul>
