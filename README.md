@@ -139,8 +139,33 @@ would break the "Data Not Collected" label (GTM §8).
 ## Maintenance notes
 
 - **“Last updated” date** on `privacy.html` **and** `de/privacy.html` — set both on publish and whenever the policy changes.
-- **Assets are regenerable** from the repo: city glyphs are extracted from
-  `Previews/<city>.preview.html`; the gallery screenshots are downscaled from
-  `Store/screenshots/raw/`; `og.png` is composed from the mascot + the site fonts. The
-  mascot (`cobble.svg`) mirrors `App/Sources/MascotView.swift`.
+- **The city grid is GENERATED — never hand-edit it.** `make site-cities`
+  re-derives the grid on `index.html` and every `assets/img/glyph-<city>.svg`
+  from `App/Content/catalog.json` — the same file the app reads, through the same
+  function (`CatalogListing.isListed`), so the page can never advertise a city the
+  store does not sell. Edit inside the `<!-- cg:cities-grid -->` region and
+  `make test` goes red (`SiteCitiesTests`), naming the file and the line.
+
+- **No counts, and no "Coming soon" (both removed 2026-08-01).** A total is stale
+  the week after it is written, and a grid of cities nobody can buy grows with
+  every seeded config. The page says new cities arrive every week, shows the ones
+  that exist, and lets the request card carry the rest. Don't reintroduce either:
+  a test refuses any page containing "coming soon" / "demnächst".
+
+  This exists because all six spots drifted at once: on 2026-08-01 the site still
+  said "ten Old Towns … thirty more" while the app shipped 27, Heidelberg had
+  never been listed, and `glyph-florence.svg` was still the CC BY-SA trace the app
+  had already replaced with a redrawn giglio for licence reasons. The site keeping
+  its own copy of the artwork was the bug.
+
+  A NEW city needs one hand edit **when it publishes**: its region line and its
+  place in the tour, in `SiteCities.roster`
+  (`Packages/CobbleCore/Sources/forge/SiteCities.swift`). Forget it and the
+  generator refuses by name rather than quietly dropping the city. Cities that are
+  seeded, packed-but-unpublished, or `testflight` are never listed, and their
+  glyphs are deleted from `assets/img/` rather than left as unreferenced images.
+- **Other assets are regenerable** from the repo: the gallery screenshots are
+  downscaled from `Store/screenshots/raw/` (`Store/derive_assets.py`); `og.png` is
+  composed from the mascot + the site fonts. The mascot (`cobble.svg`) mirrors
+  `App/Sources/MascotView.swift`.
 - **Fonts** are Fraunces + Hanken Grotesk (both OFL, licenses in `assets/fonts/`).
