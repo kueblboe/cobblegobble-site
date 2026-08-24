@@ -203,6 +203,14 @@ section{padding-block:clamp(56px,8vw,104px)}
 @media (max-width:520px){ .cities{grid-template-columns:repeat(2,1fr)} }
 .city{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 14px;
   text-align:center; display:flex; flex-direction:column; align-items:center; gap:.5rem}
+/* A tile linking to its city page wraps its children in one <a>, which then
+   becomes .city's ONLY flex item — so the column stacking, the gap and the
+   centring stop reaching the glyph, name and region, and they fall back to
+   inline flow under a default underline. The anchor has to carry the same
+   layout the tile does. Every byte-compare test passes either way: none of
+   them can see layout. */
+.city>a{display:flex; flex-direction:column; align-items:center; gap:.5rem;
+  text-decoration:none; color:inherit}
 .city .glyph{width:52px; height:52px; color:var(--gold); display:grid; place-items:center}
 .city .glyph svg{width:100%; height:100%}
 .city .name{font-family:"Fraunces",serif; font-weight:600; font-size:1.05rem}
@@ -215,19 +223,12 @@ section{padding-block:clamp(56px,8vw,104px)}
 .trust .item{display:flex; align-items:center; gap:.5rem; font-weight:600; color:var(--ink)}
 .trust .item .k{color:var(--gold); font-size:1.2rem}
 
-/* ---------- Newsletter ---------- */
+/* ---------- Get-it panel ---------- */
 .signup{background:linear-gradient(135deg,var(--stone-dark),#33302B); color:#F5EEDD; border-radius:24px;
   padding:clamp(28px,4vw,52px); box-shadow:0 30px 60px -34px #000; position:relative; overflow:hidden}
 :root[data-theme="dark"] .signup, @media (prefers-color-scheme:dark){}
 .signup h2,.signup p{color:#F5EEDD}
 .signup .eyebrow{color:var(--gold-bright)}
-.signup form{display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1.2rem; max-width:520px}
-.signup input[type=email]{flex:1 1 240px; min-width:0; font:inherit; padding:.85em 1em; border-radius:12px;
-  border:1px solid rgba(245,238,221,.28); background:rgba(0,0,0,.22); color:#F5EEDD}
-.signup input::placeholder{color:rgba(245,238,221,.72)}
-.signup input:focus-visible{outline:3px solid var(--gold-bright); outline-offset:2px}
-.signup .fineprint{font-size:.82rem; color:rgba(245,238,221,.7); margin:.9rem 0 0; max-width:52ch}
-.signup .fineprint a{color:var(--gold-bright)}
 
 /* ---------- Prose (privacy/support/accessibility long pages) ---------- */
 .prose h2{margin-top:2em} .prose h3{margin-top:1.6em}
@@ -290,3 +291,95 @@ main{flex:1}
 .stack>*+*{margin-top:1rem}
 .pill{display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.04em; padding:.25em .7em;
   border-radius:999px; background:var(--line); color:var(--ink)}
+
+/* ---------- City pages (GENERATED — site/city/<id>.html and /de/city/) ----------
+   The markup these style is written by `CityPageRender.swift`, never by hand, so
+   a class here has exactly one caller. Task 4 deliberately left this block to the
+   render task: the accessory images only have a size once something wraps them. */
+
+.crumbs{padding-top:1.3rem; font-size:.86rem; color:var(--ink-soft)}
+.crumbs a{color:var(--ink-soft); text-decoration:none}
+.crumbs a:hover{color:var(--gold-deep)}
+.crumbs [aria-current]{color:var(--ink); font-weight:600}
+
+.city-hero{padding-block:clamp(24px,4vw,64px)}
+.city-hero h1{font-size:clamp(2.4rem,5.4vw,4rem)}
+/* Cobble holding the city's own emblem as a badge — the one piece of per-city
+   art on the page, and it is the app's own glyph rather than anything new. */
+.cobble-badge{position:relative; width:min(280px,68vw); margin-inline:auto}
+.cobble-badge>img{display:block; width:100%; height:auto}
+.cobble-badge .badge{position:absolute; right:0; bottom:4%; width:42%; aspect-ratio:1;
+  display:grid; place-items:center; padding:9%; border-radius:50%;
+  background:var(--card); border:1px solid var(--line-strong);
+  box-shadow:0 16px 34px -20px var(--shadow)}
+.cobble-badge .badge svg{width:100%; height:100%}
+
+/* A section heading and its accessory, side by side. */
+.sec-head{display:flex; align-items:center; gap:clamp(10px,2vw,22px); margin-bottom:1.3rem}
+.sec-head .acc{width:clamp(60px,9vw,104px); height:auto; flex:none}
+
+/* The boundary map (task 9): bare vector, no tiles — streets in the app's own
+   painted-street gold, boundary a faint ring, fruit a warm dot. */
+.city-map{margin:1.6rem 0 0}
+.city-map svg{display:block; width:100%; height:auto; max-height:76vh;
+  background:var(--card); border:1px solid var(--line); border-radius:16px;
+  box-shadow:0 16px 34px -26px var(--shadow)}
+.cm-boundary{fill:color-mix(in srgb,var(--paint) 8%,transparent); stroke:var(--map-line); stroke-width:3}
+.cm-streets{fill:none; stroke:var(--paint); stroke-width:5; stroke-linecap:round; stroke-linejoin:round}
+.cm-fruit{fill:var(--gold-bright); stroke:var(--card); stroke-width:2}
+
+/* Landmarks: name, point tier, and the spoiler-free teaser. */
+.landmarks{list-style:none; padding:0; margin:1.5rem 0 0; display:grid; gap:.9rem}
+.landmark{background:var(--card); border:1px solid var(--line); border-radius:16px;
+  padding:1.05rem 1.25rem; box-shadow:0 14px 30px -26px var(--shadow)}
+.landmark h3{margin:0 0 .35em; display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem}
+.tier{font-family:"Hanken"; font-size:.7rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:.09em; white-space:nowrap; color:var(--on-gold);
+  background:var(--gold-bright); padding:.28em .75em; border-radius:999px}
+
+/* Two definition lists: who ruled when, and what a street word means. */
+.rulers,.words{display:grid; grid-template-columns:max-content 1fr; gap:.55rem 1.6rem;
+  margin:1.4rem 0 0}
+.rulers dt,.words dt{font-family:"Fraunces",serif; font-weight:600; color:var(--gold-deep);
+  white-space:nowrap}
+.rulers dd,.words dd{margin:0; max-width:60ch}
+.rulers dd p{margin:0}
+@media (max-width:560px){
+  .rulers,.words{grid-template-columns:1fr; gap:.15rem}
+  .rulers dd,.words dd{margin-bottom:.9rem}
+}
+
+/* The emblem, shown next to what it means. */
+.emblem{display:grid; grid-template-columns:auto 1fr; gap:clamp(16px,2.6vw,32px); align-items:start}
+.emblem .shield{width:clamp(84px,11vw,132px); aspect-ratio:1; display:grid; place-items:center;
+  padding:10%; border-radius:50%; background:var(--card); border:1px solid var(--line-strong);
+  box-shadow:0 16px 34px -24px var(--shadow)}
+.emblem .shield svg{width:100%; height:100%}
+.emblem p:first-child{margin-top:0}
+@media (max-width:560px){ .emblem{grid-template-columns:1fr} }
+
+.facts{list-style:none; padding:0; margin:1.4rem 0 0}
+.facts p{margin:0}
+
+/* The non-duplication anchor: this city's own measurements. */
+.stats{list-style:none; padding:0; margin:1.5rem 0 0; display:grid;
+  grid-template-columns:repeat(5,1fr); gap:clamp(9px,1.4vw,16px)}
+@media (max-width:720px){ .stats{grid-template-columns:repeat(2,1fr)} }
+.stats li{background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:.95rem .7rem; text-align:center; display:flex; flex-direction:column; gap:.2rem}
+.stats .v{font-family:"Fraunces",serif; font-weight:900; line-height:1; color:var(--ink);
+  font-size:clamp(1.4rem,2.4vw,2rem)}
+.stats .k{font-size:.78rem; color:var(--ink-soft)}
+
+.siblings{list-style:none; padding:0; margin:1.4rem 0 0; display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:.7rem}
+.siblings li{background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:.8rem 1rem; display:flex; flex-direction:column; gap:.1rem}
+.siblings a{font-weight:600; color:var(--gold-deep); text-decoration:none}
+.siblings a:hover{text-decoration:underline}
+.siblings .meta{font-size:.82rem; color:var(--ink-soft)}
+
+/* Citations under each passage, and the emblem's licence line. */
+.src{font-size:.78rem; color:var(--ink-soft); margin:.35rem 0 0}
+.src a{color:var(--ink-soft); text-underline-offset:2px}
+.charge{margin:.6rem 0 0}

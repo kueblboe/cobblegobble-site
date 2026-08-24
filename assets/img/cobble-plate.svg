@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cobble holding up a plate">
+  <title>Cobble holding up a plate</title>
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C7BDAE"/>
+      <stop offset="1" stop-color="#8C8070"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="120" cy="226" rx="62" ry="10" fill="#000" opacity="0.14"/>
+
+  <!-- legs -->
+  <rect x="81.6" y="184.8" width="19.2" height="33.6" rx="9.6" fill="#8C8070"/>
+  <rect x="139.2" y="184.8" width="19.2" height="33.6" rx="9.6" fill="#8C8070"/>
+
+  <!-- pebble body — mirrors App/Sources/MascotView.swift PebbleShape -->
+  <path d="M120 31.2 C190.85 31.2 218.4 59.62 218.4 112.9 C218.4 173.28 186.91 208.8 123.94 208.8 C49.15 208.8 21.6 176.83 21.6 123.55 C21.6 63.17 53.09 31.2 120 31.2 Z"
+        fill="url(#stone)" stroke="#8C8070" stroke-width="4.8" stroke-opacity="0.5"/>
+
+  <!-- eyes -->
+  <g>
+    <circle cx="90" cy="90" r="12" fill="#291F1A"/>
+    <circle cx="95.5" cy="85.5" r="4.5" fill="#fff"/>
+    <circle cx="150" cy="90" r="12" fill="#291F1A"/>
+    <circle cx="155.5" cy="85.5" r="4.5" fill="#fff"/>
+  </g>
+
+  <!-- wide, open, happy gobble mouth -->
+  <path d="M79.2 114 L160.8 114 Q120 172.32 79.2 114 Z" fill="#4D332E"/>
+  <ellipse cx="120" cy="146.76" rx="20.4" ry="9" fill="#DB6B70"/>
+
+  <!-- plate — the glyph: held up like something worth serving, clear of the ground shadow -->
+  <g id="accessory-plate" transform="rotate(-10 205 118)">
+    <ellipse cx="205" cy="118" rx="30" ry="26" fill="#C7BDAE" stroke="#8C8070" stroke-width="6"/>
+    <ellipse cx="205" cy="118" rx="18" ry="15" fill="none" stroke="#8C8070" stroke-width="3" opacity="0.6"/>
+  </g>
+</svg>

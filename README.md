@@ -37,6 +37,7 @@ it too.
 | `privacy.html` | Privacy policy, EN + DE (from `Store/web-privacy.md`) — **mandatory** to submit |
 | `support.html` | Help & support, EN + DE (from `Store/web-support.md`) — **mandatory** to submit |
 | `press.html` | Press kit: fact sheet, boilerplate, taglines, brand-asset downloads |
+| `city/<id>.html` | **Generated.** One page per authored city: landmarks, name origin, why here, why then, who ruled, the emblem, three facts, street words, the level's own measurements |
 
 All copy is the **code-backed** copy from `Store/*.md` (internal audit 2026-07-12). If a
 claim changes in the app, change it in `Store/*.md` **and** here.
@@ -110,31 +111,19 @@ The other two — the **public TestFlight link** and the **heads-up demo clip** 
 video, shot during the Passau field test per `Store/preview-clip-shotlist.md`) — are
 yours to add; they can't live in a static repo.
 
-## Wiring the newsletter (do before launch)
+## No email capture (removed 2026-08-24)
 
-The form in `index.html` (`#updates`) posts to a **placeholder** provider endpoint. It
-loads no third-party script — the provider is contacted only when a visitor submits.
-Swap the `<form action="…">` for your own privacy-respecting list.
+The site had a CleverReach signup form in `index.html#updates` for the pre-launch launch
+mail. The app is out, so the form, its section, its stylesheet rules and the privacy
+page's newsletter clause are gone; `#updates` is now `#get`, an App Store panel. The site
+collects **nothing** — no forms, no third-party endpoints, not even on submit.
 
-**Provider: CleverReach "Lite"** (chosen 2026-07-13) — German data residency (DE/EU
-servers, ISO 27001), GDPR-native, double opt-in on by default, free forever to 250
-recipients / 1,000 emails per month. Steps:
+App Store link: `https://apps.apple.com/app/id6788793161` (storefront-neutral, used on the
+EN pages), `https://apps.apple.com/de/app/cobble-gobble/id6788793161` on the DE pages.
+Both resolve to the same app id — change them together.
 
-1. Create the CleverReach account and a signup form for the list.
-2. **Turn tracking off.** Not a form setting — enable the account-wide privacy /
-   anonymised-tracking mode (Account ▸ Datenschutz), so CleverReach never records who
-   opened or clicked. Belt-and-suspenders: each newsletter's Editor ▸ Campaign Settings ▸
-   Advanced also has open/click checkboxes — leave them off. The site copy promises "no
-   tracking"; a tracking pixel would contradict the privacy page.
-3. Keep **double opt-in** (the GDPR-correct default; it's the Opt-in-E-Mail step in the flow).
-4. Copy the form's embed HTML; point the `<form action="…">` and hidden field names at it.
-   (Done — wired to list a2c5e5fd, keeping the site's own styling, not CleverReach's markup.)
-
-Graduation path if the list ever outgrows Lite or you want full ownership:
-**self-hosted Keila** or **Keila Cloud** (German open-source, EU-resident).
-
-Keep email capture on the **web only**, never in the app binary — collecting it in-app
-would break the "Data Not Collected" label (GTM §8).
+If a list is ever wanted again, keep email capture on the **web only**, never in the app
+binary: collecting it in-app would break the "Data Not Collected" label (GTM §8).
 
 ## Maintenance notes
 
@@ -164,6 +153,25 @@ would break the "Data Not Collected" label (GTM §8).
   generator refuses by name rather than quietly dropping the city. Cities that are
   seeded, packed-but-unpublished, or `testflight` are never listed, and their
   glyphs are deleted from `assets/img/` rather than left as unreferenced images.
+- **The per-city pages are GENERATED WHOLE — there is nothing in them to hand-edit.**
+  `make site-cities` writes `site/city/<id>.html` and `site/de/city/<id>.html` from the
+  city's `cityPage` block in `App/Content/configs/<city>.city.json` plus data the repo
+  already holds (pack stats, fruit tiers, the emblem, the roster). Unlike the city grid
+  these carry no `cg:` markers, because every byte is derived; `SiteCitiesTests` compares
+  the committed files against a fresh render and names the first line that moved.
+
+  **Fully authored or nothing.** A city with no complete `cityPage` simply has no page and
+  is not linked, which is the normal state for every published city until its block is
+  written. A page whose city loses its block, or stops being listed, is DELETED by
+  `make site-cities` rather than left as a live URL, the same way an unclaimed glyph is.
+
+  `sitemap.xml` carries them inside `<!-- cg:city-pages -->`, derived from the pages just
+  written, so it can never advertise one that does not exist.
+
+  Cobble narrates these pages (`Plan/VOICE_Cobble.md` §4) — they are the one part of the
+  site that is not Manuel's voice. Privacy, accessibility, support and the Impressum stay
+  his, and a city page only ever links to them.
+
 - **Other assets are regenerable** from the repo: the gallery screenshots are
   downscaled from `Store/screenshots/raw/` (`Store/derive_assets.py`); `og.png` is
   composed from the mascot + the site fonts. The mascot (`cobble.svg`) mirrors

@@ -25,6 +25,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/press.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/press.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/press.html"/></url>
+  <url><loc>https://cobblegobble.app/whats-new.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/whats-new.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/whats-new.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/whats-new.html"/></url>
+  <url><loc>https://cobblegobble.app/de/whats-new.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/whats-new.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/whats-new.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/whats-new.html"/></url>
   <url><loc>https://cobblegobble.app/privacy.html</loc><priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/privacy.html"/>
@@ -49,4 +57,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/impressum.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/impressum.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/impressum.html"/></url>
+  <!-- One entry per generated city page, EN + DE. GENERATED — `make site-cities`
+       derives this from the pages it just wrote, so it can never list a page that
+       does not exist. Edit inside the markers and `make test` goes red. -->
+  <!-- cg:city-pages -->
+  <url><loc>https://cobblegobble.app/city/passau.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/passau.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
+  <!-- /cg:city-pages -->
 </urlset>
