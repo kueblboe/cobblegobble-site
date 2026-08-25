@@ -61,6 +61,22 @@
        derives this from the pages it just wrote, so it can never list a page that
        does not exist. Edit inside the markers and `make test` goes red. -->
   <!-- cg:city-pages -->
+  <url><loc>https://cobblegobble.app/city/leuven.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/leuven.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/leuven.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/leuven.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/leuven.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/leuven.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/leuven.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/leuven.html"/></url>
+  <url><loc>https://cobblegobble.app/city/munich.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/munich.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/munich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/munich.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/munich.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/munich.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/munich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/munich.html"/></url>
   <url><loc>https://cobblegobble.app/city/passau.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
