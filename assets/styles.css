@@ -384,3 +384,35 @@ main{flex:1}
 .src{font-size:.78rem; color:var(--ink-soft); margin:.35rem 0 0}
 .src a{color:var(--ink-soft); text-underline-offset:2px}
 .charge{margin:.6rem 0 0}
+
+/* The dining section: what to eat here, by diet. One card per dish, with its
+   citations showing — a page of sourced recommendations that hides its sources
+   reads like a page of guesses. `.ask` is an instruction, not prose, so it is
+   set apart from the note above it. `.asof` is the honesty line: a stale
+   recommendation with a visible date is survivable, one without is a broken
+   promise. */
+.diets{display:grid; gap:1.6rem; margin:1.5rem 0 0}
+.diet h3{font-family:"Fraunces",serif; font-weight:700; color:var(--gold-deep);
+  margin:0 0 .5em; font-size:1.05rem; text-transform:uppercase; letter-spacing:.04em}
+.diet .band-note{font-size:.9rem; color:var(--ink-soft); max-width:60ch; margin:0 0 .9rem}
+.dishes{list-style:none; padding:0; margin:0; display:grid; gap:.9rem}
+.dish{background:var(--card); border:1px solid var(--line); border-radius:16px;
+  padding:1rem 1.15rem}
+.dish h4{margin:0 0 .35em; font-family:"Fraunces",serif; font-weight:600; font-size:1rem}
+.dish p{margin:0; max-width:62ch}
+.dish .ask{margin:.5rem 0 0; padding-left:.75rem; border-left:2px solid var(--gold-deep);
+  font-size:.9rem; color:var(--ink-soft)}
+.asof{font-size:.78rem; color:var(--ink-soft); margin:1.4rem 0 0}
+
+/* Where to eat it. Grouped by daypart; each venue shows its ROLE, never a rank. */
+.venues{display:grid; gap:1.6rem; margin:1.8rem 0 0}
+.daypart h3{font-family:"Fraunces",serif; font-weight:700; color:var(--gold-deep);
+  margin:0 0 .5em; font-size:1.05rem; text-transform:uppercase; letter-spacing:.04em}
+.venue-list{list-style:none; padding:0; margin:0; display:grid; gap:.9rem}
+.venue{background:var(--card); border:1px solid var(--line); border-radius:16px;
+  padding:1rem 1.15rem}
+.venue h4{margin:0 0 .35em; font-family:"Fraunces",serif; font-weight:600; font-size:1rem;
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem}
+.venue .role{font-family:"Hanken"; font-size:.7rem; font-weight:700; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--ink-soft)}
+.venue p{margin:0; max-width:62ch}
