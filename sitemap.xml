@@ -85,5 +85,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
+  <url><loc>https://cobblegobble.app/city/prague.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/prague.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/prague.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/prague.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/prague.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/prague.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/prague.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/prague.html"/></url>
+  <url><loc>https://cobblegobble.app/city/wasserburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/wasserburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/wasserburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/wasserburg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/wasserburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/wasserburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/wasserburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/wasserburg.html"/></url>
   <!-- /cg:city-pages -->
 </urlset>
