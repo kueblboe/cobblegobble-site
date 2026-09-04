@@ -61,6 +61,150 @@
        derives this from the pages it just wrote, so it can never list a page that
        does not exist. Edit inside the markers and `make test` goes red. -->
   <!-- cg:city-pages -->
+  <url><loc>https://cobblegobble.app/city/amsterdam.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/amsterdam.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/amsterdam.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/amsterdam.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/amsterdam.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/amsterdam.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/amsterdam.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/amsterdam.html"/></url>
+  <url><loc>https://cobblegobble.app/city/bamberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bamberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bamberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bamberg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/bamberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bamberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bamberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bamberg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/bath.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bath.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bath.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bath.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/bath.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bath.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bath.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bath.html"/></url>
+  <url><loc>https://cobblegobble.app/city/bern.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bern.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bern.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bern.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/bern.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bern.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bern.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bern.html"/></url>
+  <url><loc>https://cobblegobble.app/city/bologna.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bologna.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bologna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bologna.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/bologna.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bologna.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bologna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bologna.html"/></url>
+  <url><loc>https://cobblegobble.app/city/bruges.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bruges.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bruges.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bruges.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/bruges.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bruges.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bruges.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bruges.html"/></url>
+  <url><loc>https://cobblegobble.app/city/budapest.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/budapest.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/budapest.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/budapest.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/budapest.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/budapest.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/budapest.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/budapest.html"/></url>
+  <url><loc>https://cobblegobble.app/city/ceskykrumlov.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ceskykrumlov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ceskykrumlov.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ceskykrumlov.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/ceskykrumlov.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ceskykrumlov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ceskykrumlov.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ceskykrumlov.html"/></url>
+  <url><loc>https://cobblegobble.app/city/colmar.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/colmar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/colmar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/colmar.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/colmar.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/colmar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/colmar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/colmar.html"/></url>
+  <url><loc>https://cobblegobble.app/city/copenhagen.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/copenhagen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/copenhagen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/copenhagen.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/copenhagen.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/copenhagen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/copenhagen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/copenhagen.html"/></url>
+  <url><loc>https://cobblegobble.app/city/dublin.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/dublin.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/dublin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/dublin.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/dublin.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/dublin.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/dublin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/dublin.html"/></url>
+  <url><loc>https://cobblegobble.app/city/dubrovnik.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/dubrovnik.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/dubrovnik.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/dubrovnik.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/dubrovnik.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/dubrovnik.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/dubrovnik.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/dubrovnik.html"/></url>
+  <url><loc>https://cobblegobble.app/city/edinburgh.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/edinburgh.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/edinburgh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/edinburgh.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/edinburgh.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/edinburgh.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/edinburgh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/edinburgh.html"/></url>
+  <url><loc>https://cobblegobble.app/city/florence.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/florence.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/florence.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/florence.html"/></url>
+  <url><loc>https://cobblegobble.app/city/ghent.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ghent.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ghent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ghent.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/ghent.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ghent.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ghent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ghent.html"/></url>
+  <url><loc>https://cobblegobble.app/city/girona.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/girona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/girona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/girona.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/girona.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/girona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/girona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/girona.html"/></url>
+  <url><loc>https://cobblegobble.app/city/heidelberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/heidelberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/heidelberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/heidelberg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/heidelberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/heidelberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/heidelberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/heidelberg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/krakow.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/krakow.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/krakow.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/krakow.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/krakow.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/krakow.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/krakow.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/krakow.html"/></url>
   <url><loc>https://cobblegobble.app/city/leuven.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/leuven.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/leuven.html"/>
@@ -69,6 +213,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/leuven.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/leuven.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/leuven.html"/></url>
+  <url><loc>https://cobblegobble.app/city/lisbon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lisbon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lisbon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lisbon.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/lisbon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lisbon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lisbon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lisbon.html"/></url>
+  <url><loc>https://cobblegobble.app/city/ljubljana.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ljubljana.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ljubljana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ljubljana.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/ljubljana.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/ljubljana.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/ljubljana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/ljubljana.html"/></url>
+  <url><loc>https://cobblegobble.app/city/lucca.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lucca.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lucca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lucca.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/lucca.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lucca.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lucca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lucca.html"/></url>
+  <url><loc>https://cobblegobble.app/city/lyon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lyon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lyon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lyon.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/lyon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/lyon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/lyon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/lyon.html"/></url>
   <url><loc>https://cobblegobble.app/city/munich.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/munich.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/munich.html"/>
@@ -77,6 +253,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/munich.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/munich.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/munich.html"/></url>
+  <url><loc>https://cobblegobble.app/city/nuremberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/nuremberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/nuremberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/nuremberg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/nuremberg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/nuremberg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/nuremberg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/nuremberg.html"/></url>
   <url><loc>https://cobblegobble.app/city/passau.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
@@ -85,6 +269,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
+  <url><loc>https://cobblegobble.app/city/porto.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/porto.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/porto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/porto.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/porto.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/porto.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/porto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/porto.html"/></url>
   <url><loc>https://cobblegobble.app/city/prague.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/prague.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/prague.html"/>
@@ -93,6 +285,126 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/prague.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/prague.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/prague.html"/></url>
+  <url><loc>https://cobblegobble.app/city/regensburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/regensburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/regensburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/regensburg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/regensburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/regensburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/regensburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/regensburg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/salzburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/salzburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/salzburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/salzburg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/salzburg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/salzburg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/salzburg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/salzburg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/santiago.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/santiago.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/santiago.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/santiago.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/santiago.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/santiago.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/santiago.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/santiago.html"/></url>
+  <url><loc>https://cobblegobble.app/city/seville.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/seville.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/seville.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/seville.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/seville.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/seville.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/seville.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/seville.html"/></url>
+  <url><loc>https://cobblegobble.app/city/siena.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/siena.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/siena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/siena.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/siena.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/siena.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/siena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/siena.html"/></url>
+  <url><loc>https://cobblegobble.app/city/split.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/split.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/split.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/split.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/split.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/split.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/split.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/split.html"/></url>
+  <url><loc>https://cobblegobble.app/city/stockholm.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/stockholm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/stockholm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/stockholm.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/stockholm.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/stockholm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/stockholm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/stockholm.html"/></url>
+  <url><loc>https://cobblegobble.app/city/strasbourg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/strasbourg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/strasbourg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/strasbourg.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/strasbourg.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/strasbourg.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/strasbourg.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/strasbourg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/tallinn.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/tallinn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/tallinn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/tallinn.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/tallinn.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/tallinn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/tallinn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/tallinn.html"/></url>
+  <url><loc>https://cobblegobble.app/city/toledo.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/toledo.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/toledo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/toledo.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/toledo.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/toledo.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/toledo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/toledo.html"/></url>
+  <url><loc>https://cobblegobble.app/city/trebon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/trebon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/trebon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/trebon.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/trebon.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/trebon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/trebon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/trebon.html"/></url>
+  <url><loc>https://cobblegobble.app/city/venice.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/venice.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/venice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/venice.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/venice.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/venice.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/venice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/venice.html"/></url>
+  <url><loc>https://cobblegobble.app/city/verona.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/verona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/verona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/verona.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/verona.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/verona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/verona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/verona.html"/></url>
+  <url><loc>https://cobblegobble.app/city/vienna.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/vienna.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/vienna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/vienna.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/vienna.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/vienna.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/vienna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/vienna.html"/></url>
+  <url><loc>https://cobblegobble.app/city/vilnius.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/vilnius.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/vilnius.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/vilnius.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/vilnius.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/vilnius.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/vilnius.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/vilnius.html"/></url>
   <url><loc>https://cobblegobble.app/city/wasserburg.html</loc><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/wasserburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/wasserburg.html"/>
@@ -101,5 +413,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/wasserburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/wasserburg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/wasserburg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/york.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/york.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/york.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/york.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/york.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/york.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/york.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/york.html"/></url>
   <!-- /cg:city-pages -->
 </urlset>
