@@ -416,3 +416,13 @@ main{flex:1}
 .venue .role{font-family:"Hanken"; font-size:.7rem; font-weight:700; text-transform:uppercase;
   letter-spacing:.06em; color:var(--ink-soft)}
 .venue p{margin:0; max-width:62ch}
+/* Opening times, as numbers. A two-column grid so the days line up and the eye
+   drops straight to today's row instead of reading a sentence. Numbers are
+   tabular so 09:00 and 11:30 share a width. */
+.venue .hours{list-style:none; padding:0; margin:.6rem 0 0; display:grid;
+  grid-template-columns:auto auto; justify-content:start; gap:.1rem .8rem;
+  font-size:.82rem}
+.venue .hours li{display:contents}
+.venue .hours .d{color:var(--ink-soft); font-variant-caps:all-small-caps; letter-spacing:.04em}
+.venue .hours .t{font-variant-numeric:tabular-nums}
+.venue .hours .t.shut{color:var(--ink-soft)}
