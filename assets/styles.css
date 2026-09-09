@@ -155,7 +155,7 @@ section{padding-block:clamp(56px,8vw,104px)}
 .hero{position:relative; overflow:hidden; padding-block:clamp(40px,6vw,84px)}
 .hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,4vw,56px); align-items:center}
 @media (max-width:860px){ .hero .wrap{grid-template-columns:1fr; text-align:left} }
-.hero h1{margin-bottom:.2em}
+.hero h1{margin-bottom:.2em; font-size:clamp(2rem,3.6vw,3rem)}
 .hero .tagline{font-family:"Fraunces",serif; font-style:italic; font-weight:400;
   font-size:clamp(1.3rem,2.2vw,1.7rem); color:var(--gold-deep); margin:.1em 0 .7em}
 .hero .mascot-line{display:flex; align-items:center; gap:1rem; margin:.4rem 0 1.4rem}
@@ -271,6 +271,8 @@ dl.facts dd{margin:0}
   font-size:.74rem; color:var(--ink-soft); margin:0 0 .8em; line-height:1.2}
 .site-foot a{color:var(--ink-soft); text-decoration:none; display:block; padding:.2em 0}
 .site-foot a:hover{color:var(--gold-deep)}
+.foot-social{margin:.7rem 0 0}
+.foot-social a{display:inline}
 .foot-brand{display:flex; align-items:center; gap:.6rem; font-family:"Fraunces",serif; font-weight:900; font-size:1.2rem; color:var(--ink); margin-bottom:.7em}
 .foot-brand img{width:34px;height:34px}
 .colophon{grid-column:1/-1; border-top:1px solid var(--line); margin-top:1rem; padding-top:1.2rem;
