@@ -53,4 +53,26 @@
       try { localStorage.setItem("cg-lang", a.getAttribute("hreflang")); } catch (e) {}
     });
   });
+
+  /* Campaign attribution — turn ?ct=<campaign> into an App Store campaign link.
+
+     A printed partner card's QR points at /go/<city>-<placement>.html, which forwards
+     here carrying the placement's campaign token. Rewriting the App Store links is what
+     makes the scan countable in App Store Connect, and it is the ONLY thing that does:
+     Apple counts a campaign from the pt/ct pair on the outgoing link, nothing else.
+
+     Still no analytics and no third party: nothing is sent anywhere, nothing is stored,
+     and the only change is the query string on a link the visitor may or may not tap.
+     The token is matched against a strict pattern before it is used, so a crafted URL
+     cannot inject anything into the href. */
+  try {
+    var ct = new URLSearchParams(location.search).get("ct");
+    if (ct && /^[a-z0-9-]{1,30}$/.test(ct)) {
+      var campaignURL = "https://apps.apple.com/app/apple-store/id6788793161" +
+        "?pt=129141164&ct=" + ct + "&mt=8";
+      document.querySelectorAll('a[href*="id6788793161"]').forEach(function (a) {
+        a.href = campaignURL;
+      });
+    }
+  } catch (e) {}
 })();
