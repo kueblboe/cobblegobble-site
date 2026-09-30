@@ -93,6 +93,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bath.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bath.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bath.html"/></url>
+  <url><loc>https://cobblegobble.app/city/berlin.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/berlin.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/berlin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/berlin.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/berlin.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/berlin.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/berlin.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/berlin.html"/></url>
   <url><loc>https://cobblegobble.app/city/bern.html</loc><lastmod>2026-09-26</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bern.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bern.html"/>
@@ -277,6 +285,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/nuremberg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/nuremberg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/nuremberg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/paris.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/paris.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/paris.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/paris.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/paris.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/paris.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/paris.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/paris.html"/></url>
   <url><loc>https://cobblegobble.app/city/passau.html</loc><lastmod>2026-09-26</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
@@ -309,6 +325,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/regensburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/regensburg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/regensburg.html"/></url>
+  <url><loc>https://cobblegobble.app/city/riga.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/riga.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/riga.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/riga.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/riga.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/riga.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/riga.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/riga.html"/></url>
   <url><loc>https://cobblegobble.app/city/salzburg.html</loc><lastmod>2026-09-26</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/salzburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/salzburg.html"/>
@@ -437,5 +461,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/york.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/york.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/york.html"/></url>
+  <url><loc>https://cobblegobble.app/city/zurich.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/zurich.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/zurich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/zurich.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/zurich.html</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/zurich.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/zurich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/zurich.html"/></url>
   <!-- /cg:city-pages -->
 </urlset>
