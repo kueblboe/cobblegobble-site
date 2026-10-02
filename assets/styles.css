@@ -418,6 +418,7 @@ main{flex:1}
 .venue .role{font-family:"Hanken"; font-size:.7rem; font-weight:700; text-transform:uppercase;
   letter-spacing:.06em; color:var(--ink-soft)}
 .venue p{margin:0; max-width:62ch}
+.venue .addr{margin:0 0 .45rem; font-size:.85rem; color:var(--ink-soft)}
 /* Opening times, as numbers. A two-column grid so the days line up and the eye
    drops straight to today's row instead of reading a sentence. Numbers are
    tabular so 09:00 and 11:30 share a width. */
