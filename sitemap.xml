@@ -69,11 +69,11 @@
        derives this from the pages it just wrote, so it can never list a page that
        does not exist. Edit inside the markers and `make test` goes red. -->
   <!-- cg:city-pages -->
-  <url><loc>https://cobblegobble.app/city/amsterdam.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/amsterdam.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/amsterdam.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/amsterdam.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/amsterdam.html"/></url>
-  <url><loc>https://cobblegobble.app/de/city/amsterdam.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/amsterdam.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/amsterdam.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/amsterdam.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/amsterdam.html"/></url>
@@ -93,11 +93,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bath.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bath.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bath.html"/></url>
-  <url><loc>https://cobblegobble.app/city/berlin.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/berlin.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/berlin.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/berlin.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/berlin.html"/></url>
-  <url><loc>https://cobblegobble.app/de/city/berlin.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/berlin.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/berlin.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/berlin.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/berlin.html"/></url>
@@ -221,11 +221,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/krakow.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/krakow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/krakow.html"/></url>
-  <url><loc>https://cobblegobble.app/city/landshut.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/landshut.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/landshut.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/landshut.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/landshut.html"/></url>
-  <url><loc>https://cobblegobble.app/de/city/landshut.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/landshut.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/landshut.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/landshut.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/landshut.html"/></url>
@@ -293,11 +293,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/paris.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/paris.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/paris.html"/></url>
-  <url><loc>https://cobblegobble.app/city/passau.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/passau.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
-  <url><loc>https://cobblegobble.app/de/city/passau.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/passau.html</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
@@ -333,11 +333,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/riga.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/riga.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/riga.html"/></url>
-  <url><loc>https://cobblegobble.app/city/salzburg.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/salzburg.html</loc><lastmod>2026-10-03</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/salzburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/salzburg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/salzburg.html"/></url>
-  <url><loc>https://cobblegobble.app/de/city/salzburg.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/salzburg.html</loc><lastmod>2026-10-03</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/salzburg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/salzburg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/salzburg.html"/></url>
