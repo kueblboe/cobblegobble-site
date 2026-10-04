@@ -301,6 +301,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/passau.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/passau.html"/></url>
+  <url><loc>https://cobblegobble.app/city/pilsen.html</loc><lastmod>2026-10-04</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/pilsen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/pilsen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/pilsen.html"/></url>
+  <url><loc>https://cobblegobble.app/de/city/pilsen.html</loc><lastmod>2026-10-04</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/pilsen.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/pilsen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/pilsen.html"/></url>
   <url><loc>https://cobblegobble.app/city/porto.html</loc><lastmod>2026-10-01</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/porto.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/porto.html"/>
