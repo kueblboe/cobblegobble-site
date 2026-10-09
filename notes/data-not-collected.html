@@ -70,12 +70,15 @@
         distrust. I wanted the label to say <em>Data Not Collected</em> and be literally true.</p>
 
       <h2>What actually leaves the phone</h2>
-      <p>Three things, all anonymous or yours (plus the map tiles, which come from Apple's MapKit like in any map app). The app downloads a catalog and city packs from a static
+      <p>Three things, all anonymous or yours. The app downloads a catalog and city packs from a static
         host (plain GETs of JSON files, no query parameters, no identifiers). StoreKit talks to Apple
         when you buy a city. And your progress (which streets you finished, not where you were) backs
         up to <em>your own</em> iCloud key-value store, so a reinstall does not erase an afternoon.
         That backup is on by default and has a switch. Apple's definition of "collected" turns on
         whether the developer can access the data. I cannot: it sits in your iCloud, not mine.</p>
+      <p>One more request goes out, and it is not mine: the map is Apple's MapKit, so the phone asks
+        Apple for the tiles of the area on screen, like any map app does. Those requests tell Apple
+        roughly where you are looking. I see none of it.</p>
       <p>The location trail itself is never uploaded, anywhere, ever. There is no account, no analytics
         SDK, no crash reporter. <code>NSPrivacyCollectedDataTypes</code> in the privacy manifest is an
         empty array, with a comment above it explaining that adding an entry means something now
@@ -90,8 +93,9 @@
         guarantee: the significant-change wake re-scans every owned city, so a city outside the
         nearest 18 is still caught.</p>
       <p>That wake is coarser than its reputation. The commonly quoted figure is about 500 m. In a
-        dense old town it woke us at 160 m and 247 m: it fires on cell handover, not distance. I had
-        written the 500 m into a design doc as if it were data, and it nearly cost a design cycle.</p>
+        dense old town it woke my phone at 160 m and 247 m: it fires on cell handover, not distance. I had
+        written the 500 m into a design doc as if it were data, and specced a
+        fix on top of it that would have saved none of the dots it was meant to save (part one, below).</p>
       <p><strong>Playing</strong> starts when a region entry coincides with walking. Accuracy is
         <code>kCLLocationAccuracyNearestTenMeters</code> with a 10 m distance filter and
         <code>activityType = .fitness</code>. Best-available accuracy would be pointless: a dot
@@ -110,8 +114,9 @@
 
       <h2>Debugging without telemetry</h2>
       <p>No analytics means no dashboard showing which sessions die in the background. What
-        I have instead is a flight recorder. A switch in the field-test settings (off by default) makes
-        the app append every state-machine input, fix, motion reading, command and battery reading to
+        I have instead is a flight recorder. It exists only in a field-test build that I and a
+        few testers install; the App Store build does not contain it, so no player can switch it on.
+        Turned on, it makes the app append every state-machine input, fix, motion reading, command and battery reading to
         a local JSONL file. It never uploads. I walk a city, speak ground truth into a voice memo
         ("sitting down at the café"), then AirDrop the log to my Mac.</p>
       <p>The session state machine is pure Swift with no CoreLocation in it, so the CLI replays a real
@@ -131,7 +136,7 @@
         down the street. The six dots I walked on the way were gone, and they could never come back,
         because nothing was running when I walked past them.</p>
       <p>The obvious fix was a "departure fence": when pausing, drop a small geofence around the café
-        so leaving it wakes the app. Before building it we measured it against the logs. A region exit
+        so leaving it wakes the app. Before building it I measured it against the logs. A region exit
         cannot fire until you are outside the radius, so a 150 m fence has a 150 m floor. The lost dots
         sat 41 to 139 m from the café. At the other incident (a shopping mall) they sat 100 to 137 m
         away. The fence would have saved zero of nine lost dots, in both cases.</p>
@@ -173,8 +178,8 @@
         updates over 8.3 minutes in the background without the app ever being opened. Pausing became
         a game state (no collection while you sit) instead of a radio state. On the next walk, the phone with motion access came through its café pauses without a hole.</p>
 
-      <h2>What broke, part two: Motion &amp; Fitness became load-bearing</h2>
-      <p>Five days after that shipped to testers, two of us walked Passau again. The other phone
+      <h2>What broke, part two: the app quietly depended on Motion &amp; Fitness</h2>
+      <p>Five days after that shipped to testers, a friend and I walked Passau again. Their phone
         recorded 6,808 fixes over 135 minutes. Mine recorded 124. One of my sessions never left the
         "arriving" state at all: zero fixes. The difference was a setting. I had turned Motion &amp;
         Fitness off, the way a privacy-minded user would.</p>
@@ -195,8 +200,7 @@
         Precise Location, notifications, iCloud, Low Power Mode and the rest) gets a row in a
         capability matrix naming three things: the code that runs when it is off, a test asserting
         that path is chosen, and where the field log records which path a session took. A fallback
-        that silently depends on the thing that failed is not a fallback. Replay backs the
-        motion-off path; a pocketed motion-off walk to prove it on the device is still on my list.</p>
+        that silently depends on the thing that failed is not a fallback.</p>
 
       <h2>The battery budget, and the wrong unit</h2>
       <p>The original target was 5% per hour of play. It was the wrong unit. The same 5%/h asks 391 mW
@@ -207,8 +211,7 @@
         SE-class battery (set on the smallest phone, because that is who gets stranded). For me: the
         app adds at most 250 mW over a control walk with the app not playing. A 112-minute walk on an
         SE 3 used 8% per hour, inside the player budget. A 138-minute walk on a larger phone came in
-        at 937 mW. A Prague walk measured about 2 W, which is not a location tracker: it is a whole
-        phone hunting for signal between stone walls, plus my own field logging.</p>
+        at 937 mW.</p>
       <p>Which is the uncomfortable part: every number above is whole-phone. The app's own cost has
         never been isolated, because the control walk (same route, same phone, app idle) has not been
         walked. The replay tool prints "no gate verdict: needs a dormant control leg" on every run
