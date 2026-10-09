@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Not Collected, all afternoon · Cobble Gobble notes</title>
+<meta name="description" content="What continuous background location, geofence dormancy, a battery budget and offline map packs look like on iOS when the location trail never leaves the phone and there is no analytics SDK. Two things that broke in the field, and what fixed them.">
+<link rel="canonical" href="https://cobblegobble.app/notes/data-not-collected.html">
+<meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Not Collected, all afternoon">
+<meta property="og:description" content="Background location on iOS when the trail never leaves the phone: geofence dormancy, a battery budget, offline packs, and the two things that broke in the field.">
+<meta property="og:url" content="https://cobblegobble.app/notes/data-not-collected.html">
+<meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+  .prose code{font-size:.9em; background:var(--card); border:1px solid var(--line); border-radius:6px; padding:.05em .35em}
+  .note-fig{margin:2em 0; padding:1.1em 1.1em .9em; background:var(--card); border:1px solid var(--line); border-radius:18px}
+  .note-fig svg{display:block; width:100%; height:auto}
+  .note-fig .fig-scroll{overflow-x:auto}
+  @media (max-width:560px){ .note-fig svg{min-width:520px} }
+  .note-fig figcaption{font-size:.92rem; color:var(--ink-soft); margin-top:.6em}
+  .note-fig .ax{stroke:var(--line-strong); stroke-width:1.5}
+  .note-fig .tick{fill:var(--ink-soft); font:13px "Hanken",system-ui,sans-serif}
+  .note-fig .lbl{fill:var(--ink); font:600 13px "Hanken",system-ui,sans-serif}
+  .note-fig .lost{fill:none; stroke:var(--stone); stroke-width:2.5}
+  .note-fig .got{fill:var(--gold); stroke:none}
+  .note-fig .floor{stroke:var(--stone-dark); stroke-width:2; stroke-dasharray:6 5}
+  .note-fig .wake{stroke:var(--gold-deep); stroke-width:3}
+  .note-fig .start{fill:var(--ink)}
+  .byline{color:var(--ink-soft); font-size:.95rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/index.html#how">How it plays</a>
+      <a href="/cities.html">Cities</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/privacy.html" class="hide-sm">Privacy</a>
+      <a href="/press.html">Press</a>
+    </nav>
+    <button class="theme-btn" type="button" aria-label="Switch colour theme">☽︎</button>
+  </div>
+</header>
+
+<main id="main">
+  <article>
+    <div class="wrap narrow prose">
+      <p class="eyebrow"><a href="/notes/">Notes</a></p>
+      <h1>Data Not Collected, all afternoon</h1>
+      <p class="lede">An iPhone app that runs GPS in your pocket for three hours, wakes itself when you
+        arrive somewhere, and has an App Store privacy label that says it collects nothing. Here is
+        what that takes, and the two places it broke.</p>
+      <p class="byline">Manuel Küblböck · October 2026</p>
+
+      <p>The app is a walking game. You pick a city, its old town becomes a level, and every street
+        is lined with dots you collect by physically walking it. What matters here is the problem it
+        forces: <strong>continuous background location, for hours, in a pocket, started without
+        anyone pressing a button</strong>. That is the exact profile of the apps people are right to
+        distrust. I wanted the label to say <em>Data Not Collected</em> and be literally true.</p>
+
+      <h2>What actually leaves the phone</h2>
+      <p>Three things, all anonymous or yours (plus the map tiles, which come from Apple's MapKit like in any map app). The app downloads a catalog and city packs from a static
+        host (plain GETs of JSON files, no query parameters, no identifiers). StoreKit talks to Apple
+        when you buy a city. And your progress (which streets you finished, not where you were) backs
+        up to <em>your own</em> iCloud key-value store, so a reinstall does not erase an afternoon.
+        That backup is on by default and has a switch. Apple's definition of "collected" turns on
+        whether the developer can access the data. I cannot: it sits in your iCloud, not mine.</p>
+      <p>The location trail itself is never uploaded, anywhere, ever. There is no account, no analytics
+        SDK, no crash reporter. <code>NSPrivacyCollectedDataTypes</code> in the privacy manifest is an
+        empty array, with a comment above it explaining that adding an entry means something now
+        leaves the device.</p>
+
+      <h2>Two modes: dormant and playing</h2>
+      <p><strong>Dormant</strong> is the normal state: no GPS at all. The app registers a geofence
+        (a <code>CLCircularRegion</code>) around each city you own, plus significant-location-change
+        monitoring as a backstop. The OS runs region monitoring on low-power hardware and can relaunch
+        a terminated app for it. iOS caps you at 20 regions per app and drops the excess without a
+        callback, so the app arms the nearest 18. The geofences are a latency optimization, not the
+        guarantee: the significant-change wake re-scans every owned city, so a city outside the
+        nearest 18 is still caught.</p>
+      <p>That wake is coarser than its reputation. The commonly quoted figure is about 500 m. In a
+        dense old town it woke us at 160 m and 247 m: it fires on cell handover, not distance. I had
+        written the 500 m into a design doc as if it were data, and it nearly cost a design cycle.</p>
+      <p><strong>Playing</strong> starts when a region entry coincides with walking. Accuracy is
+        <code>kCLLocationAccuracyNearestTenMeters</code> with a 10 m distance filter and
+        <code>activityType = .fitness</code>. Best-available accuracy would be pointless: a dot
+        collects when a fix lands within 25 m, so centimetre GPS buys nothing but battery drain.</p>
+      <p>Grant only While Using and regions deliver nothing to a backgrounded app, so the app uses
+        <code>UNLocationNotificationTrigger</code> instead: the system posts an arrival notification,
+        and one tap starts the walk.</p>
+
+      <h2>Offline packs, so the matching can stay local</h2>
+      <p>Every city is precompiled on my Mac, from OpenStreetMap, by a command-line tool that shares
+        one Swift package with the app: graph building, dot placement, geometry. The output is a JSON
+        pack (Passau is 220 KB, Paris 1.4 MB) holding streets, dots every 20 m, and landmarks. Once
+        bought, a pack plays fully offline. Matching a fix to dots is a spatial grid lookup on the
+        phone. There is no server that could know where you are, because there is no server doing
+        anything but serving files.</p>
+
+      <h2>Debugging without telemetry</h2>
+      <p>No analytics means no dashboard showing which sessions die in the background. What
+        I have instead is a flight recorder. A switch in the field-test settings (off by default) makes
+        the app append every state-machine input, fix, motion reading, command and battery reading to
+        a local JSONL file. It never uploads. I walk a city, speak ground truth into a voice memo
+        ("sitting down at the café"), then AirDrop the log to my Mac.</p>
+      <p>The session state machine is pure Swift with no CoreLocation in it, so the CLI replays a real
+        walk through the real code and reports what it collected, what it refused, and why. Slices of
+        those logs are test fixtures, so a tracking change gets argued against "these six dots on
+        Lederergasse", not in the abstract. The cost: my sample is my own walks and a few friends'
+        phones. It catches gross errors, not the long tail.</p>
+
+      <h2>What broke, part one: a paused app is a suspended app</h2>
+      <p>The original design had auto-pause: sit down in a café for three minutes, GPS turns off, and
+        "motion resumes it" when you get up. The comment in the code said exactly that. The first
+        Passau field test showed it was false in the pocket.</p>
+      <p>Stopping location updates removes the app's last reason to run in the background. iOS
+        suspends it within about a minute. A suspended app gets no motion callbacks and no timers.
+        During one café pause the log has zero records for 32 minutes: no 20-second ticks, nothing.
+        I got up, walked out, and the phone slept on. It woke on a significant-change event 160 m
+        down the street. The six dots I walked on the way were gone, and they could never come back,
+        because nothing was running when I walked past them.</p>
+      <p>The obvious fix was a "departure fence": when pausing, drop a small geofence around the café
+        so leaving it wakes the app. Before building it we measured it against the logs. A region exit
+        cannot fire until you are outside the radius, so a 150 m fence has a 150 m floor. The lost dots
+        sat 41 to 139 m from the café. At the other incident (a shopping mall) they sat 100 to 137 m
+        away. The fence would have saved zero of nine lost dots, in both cases.</p>
+
+      <figure class="note-fig">
+        <div class="fig-scroll"><svg viewBox="0 0 640 162" role="img" aria-labelledby="fig-t fig-d">
+          <title id="fig-t">Why a departure fence cannot save the café dots</title>
+          <desc id="fig-d">Distance from the café pause point, 0 to 250 metres. Six lost dots sit between 41 and 139 metres. A 150 metre fence could fire no earlier than 150 metres. The real wake came at 160 metres.</desc>
+          <line class="ax" x1="30" y1="100" x2="610" y2="100"/>
+          <g class="tick" text-anchor="middle">
+            <text x="30" y="128">0 m</text><text x="146" y="128">50</text><text x="262" y="128">100</text>
+            <text x="378" y="128">150</text><text x="494" y="128">200</text><text x="610" y="128">250</text>
+          </g>
+          <circle class="start" cx="30" cy="100" r="7"/>
+          <text class="lbl" x="30" y="30">café pause</text>
+          <line class="ax" x1="30" y1="38" x2="30" y2="88"/>
+          <g>
+            <circle class="lost" cx="125" cy="100" r="7"/><circle class="lost" cx="171" cy="100" r="7"/>
+            <circle class="lost" cx="217" cy="100" r="7"/><circle class="lost" cx="263" cy="100" r="7"/>
+            <circle class="lost" cx="309" cy="100" r="7"/><circle class="lost" cx="352" cy="100" r="7"/>
+          </g>
+          <text class="lbl" x="238" y="72" text-anchor="middle">6 dots walked while suspended (41 to 139 m)</text>
+          <line class="floor" x1="378" y1="40" x2="378" y2="112"/>
+          <text class="tick" x="372" y="152" text-anchor="end">fence floor 150 m</text>
+          <line class="wake" x1="401" y1="40" x2="401" y2="112"/>
+          <text class="lbl" x="408" y="44">real wake 160 m</text>
+          <circle class="got" cx="424" cy="100" r="7"/><circle class="got" cx="470" cy="100" r="7"/>
+          <circle class="got" cx="516" cy="100" r="7"/>
+          <text class="tick" x="470" y="152" text-anchor="middle">collected again</text>
+        </svg></div>
+        <figcaption>Passau, 15 July 2026, from the field log. Anything that wakes on leaving a circle is
+          blind inside that circle, and the circle is exactly where you walk first.</figcaption>
+      </figure>
+
+      <p>So nothing wake-based could close the hole. The fix was to stop turning GPS off.
+        <code>CLLocationUpdate.liveUpdates</code> (iOS 17) lets the system own the pause: it quiets
+        the radio when you are stationary and un-suspends the app when you move. In a desk test the
+        motion chip's transition and the first delivered fix were 38 ms apart, and it delivered 475
+        updates over 8.3 minutes in the background without the app ever being opened. Pausing became
+        a game state (no collection while you sit) instead of a radio state. On the next walk, the phone with motion access came through its café pauses without a hole.</p>
+
+      <h2>What broke, part two: Motion &amp; Fitness became load-bearing</h2>
+      <p>Five days after that shipped to testers, two of us walked Passau again. The other phone
+        recorded 6,808 fixes over 135 minutes. Mine recorded 124. One of my sessions never left the
+        "arriving" state at all: zero fixes. The difference was a setting. I had turned Motion &amp;
+        Fitness off, the way a privacy-minded user would.</p>
+      <p>The system-managed pause is triggered by motion. Without motion access, the pocketed stream
+        collapsed to sparse, minutes-apart deliveries, with one gap of 19 minutes. There was a fallback
+        (inferring walking from GPS itself), but inferring walking from GPS needs a dense fix stream,
+        which was exactly what had collapsed. Circular starvation. The replay showed zero recoverable
+        losses: every dot a fix reached got collected. The fixes just never arrived.</p>
+      <p>The fix is a selection in the adapter: if motion access is exactly <code>.authorized</code>,
+        use <code>liveUpdates</code>; otherwise use the classic delegate stream with
+        <code>pausesLocationUpdatesAutomatically = false</code>, which opts out of the pause machinery
+        entirely and keeps the radio on until you leave town. That costs more battery, and the
+        Settings copy says so instead of claiming "works fine". The first draft keyed the choice on
+        "motion is usable", which is also true for <em>not yet asked</em>. That would have put every
+        upgrading user (who never sees onboarding, so is never asked) on the stream that collapses. A
+        review before coding caught it.</p>
+      <p>The lesson became a rule. Every OS capability a user can withhold (Motion, location tier,
+        Precise Location, notifications, iCloud, Low Power Mode and the rest) gets a row in a
+        capability matrix naming three things: the code that runs when it is off, a test asserting
+        that path is chosen, and where the field log records which path a session took. A fallback
+        that silently depends on the thing that failed is not a fallback. Replay backs the
+        motion-off path; a pocketed motion-off walk to prove it on the device is still on my list.</p>
+
+      <h2>The battery budget, and the wrong unit</h2>
+      <p>The original target was 5% per hour of play. It was the wrong unit. The same 5%/h asks 391 mW
+        of the iPhone SE I test on, around 800 mW of a large current iPhone, and 313 mW of that same SE
+        once its battery ages to 80% health. A gate that turns red because the tester's phone got older
+        is not a gate on my code.</p>
+      <p>So there are two numbers now. For players: a two-hour walk costs under 20% of a healthy
+        SE-class battery (set on the smallest phone, because that is who gets stranded). For me: the
+        app adds at most 250 mW over a control walk with the app not playing. A 112-minute walk on an
+        SE 3 used 8% per hour, inside the player budget. A 138-minute walk on a larger phone came in
+        at 937 mW. A Prague walk measured about 2 W, which is not a location tracker: it is a whole
+        phone hunting for signal between stone walls, plus my own field logging.</p>
+      <p>Which is the uncomfortable part: every number above is whole-phone. The app's own cost has
+        never been isolated, because the control walk (same route, same phone, app idle) has not been
+        walked. The replay tool prints "no gate verdict: needs a dormant control leg" on every run
+        until it is.</p>
+
+      <h2>What it costs</h2>
+      <p>Building this way is slower. Every tracking bug is found by walking, not by querying. iOS still
+        shows its periodic "used your location in the background" reminder, and the only defence is
+        that there is nothing behind the curtain. In return I get a privacy label I never have to
+        explain away.</p>
+      <p>If you want to see what it is for, the game is <a href="/">Cobble Gobble</a>. If you are
+        building something that follows people around all day: measure the wake distance before you
+        design around it, and assume every optional setting is off.</p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand"><img src="/assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <p class="meta-line">A cozy, heads-up, pressure-free city-walking game.<br>Made with love in Bavaria.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>The game</h2>
+      <a href="/index.html#how">How it plays</a>
+      <a href="/cities.html">Cities</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/notes/">Notes</a>
+    </nav>
+    <nav aria-label="More">
+      <h2>Fine print</h2>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/support.html">Help &amp; support</a>
+      <a href="/impressum.html">Impressum</a>
+      <a href="mailto:hello@newworkbydesign.com">hello@newworkbydesign.com</a>
+    </nav>
+    <div class="colophon">
+      <span>© 2026 Cobble Gobble</span>
+      <span>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
