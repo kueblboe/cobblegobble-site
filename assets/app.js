@@ -64,12 +64,29 @@
      Still no analytics and no third party: nothing is sent anywhere, nothing is stored,
      and the only change is the query string on a link the visitor may or may not tap.
      The token is matched against a strict pattern before it is used, so a crafted URL
-     cannot inject anything into the href. */
+     cannot inject anything into the href.
+
+     Some campaigns land on a custom product page instead of the default one: the page
+     whose screenshots match what sent them (Store/product-pages.md section 3). The page
+     ids are App Store Connect's, approved 2026-10-14. A campaign not listed here keeps the
+     default page, which is where the PPO test runs. */
+  var PRODUCT_PAGES = {
+    cozy: "18d61e34-f3fe-484c-b69c-0b1a4c9f673b",
+    travel: "6868e612-3b34-4508-80d9-0f7e3632e033",
+    accessibility: "5d06a057-676e-40eb-b080-571c1e9935f8"
+  };
+  var PAGE_FOR_CAMPAIGN = {
+    "social-instagram": "cozy", "social-pinterest": "cozy", "social-youtube": "cozy",
+    "partner-touristinfo": "travel", "partner-airbnb": "travel",
+    "partner-hotel": "travel", "partner-venue": "travel", "creators": "travel",
+    "press-accessibility": "accessibility"
+  };
   try {
     var ct = new URLSearchParams(location.search).get("ct");
     if (ct && /^[a-z0-9-]{1,30}$/.test(ct)) {
-      var campaignURL = "https://apps.apple.com/app/apple-store/id6788793161" +
-        "?pt=129141164&ct=" + ct + "&mt=8";
+      var ppid = PRODUCT_PAGES[PAGE_FOR_CAMPAIGN[ct]];
+      var campaignURL = "https://apps.apple.com/app/apple-store/id6788793161?" +
+        (ppid ? "ppid=" + ppid + "&" : "") + "pt=129141164&ct=" + ct + "&mt=8";
       document.querySelectorAll('a[href*="id6788793161"]').forEach(function (a) {
         a.href = campaignURL;
       });
