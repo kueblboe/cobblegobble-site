@@ -325,12 +325,21 @@ main{flex:1}
 /* The boundary map (task 9): bare vector, no tiles — streets in the app's own
    painted-street gold, boundary a faint ring, fruit a warm dot. */
 .city-map{margin:1.6rem 0 0}
-.city-map svg{display:block; width:100%; height:auto; max-height:76vh;
+.city-map svg{display:block; overflow:hidden; width:100%; height:auto; max-height:76vh;
   background:var(--card); border:1px solid var(--line); border-radius:16px;
   box-shadow:0 16px 34px -26px var(--shadow)}
 .cm-boundary{fill:color-mix(in srgb,var(--paint) 8%,transparent); stroke:var(--map-line); stroke-width:3}
 .cm-streets{fill:none; stroke:var(--paint); stroke-width:5; stroke-linecap:round; stroke-linejoin:round}
 .cm-fruit{fill:var(--gold-bright); stroke:var(--card); stroke-width:2}
+.cm-water{fill:color-mix(in srgb,#5B8FB0 30%,var(--card)); stroke:none}
+.cm-waterline{fill:none; stroke:color-mix(in srgb,#5B8FB0 45%,var(--card)); stroke-width:6; stroke-linecap:round; stroke-linejoin:round}
+/* The walk page's map: the level faint, the loop bold, the stops numbered. */
+.cm-faint{opacity:.3; stroke-width:4}
+.cm-route{fill:none; stroke:var(--gold); stroke-width:10; stroke-linecap:round; stroke-linejoin:round}
+.cm-stop circle{fill:var(--ink); stroke:var(--card); stroke-width:4}
+.cm-stop text{fill:var(--card); font:700 36px/1 system-ui,sans-serif; text-anchor:middle; dominant-baseline:central}
+.walk-stops{list-style:none; padding:0; margin:1.5rem 0 0; display:grid; gap:.9rem}
+.walk-stops .leg{margin:.6rem 0 0; color:var(--ink-soft); font-size:.95rem}
 
 /* Landmarks: name, point tier, and the spoiler-free teaser. */
 .landmarks{list-style:none; padding:0; margin:1.5rem 0 0; display:grid; gap:.9rem}

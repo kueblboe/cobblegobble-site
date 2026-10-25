@@ -93,6 +93,14 @@
   <!-- One entry per generated city page, EN + DE. GENERATED — `make site-cities`
        derives this from the pages it just wrote, so it can never list a page that
        does not exist. Edit inside the markers and `make test` goes red. -->
+  <url><loc>https://cobblegobble.app/walk-every-street.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk-every-street.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk-every-street.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk-every-street.html"/></url>
+  <url><loc>https://cobblegobble.app/de/walk-every-street.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk-every-street.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk-every-street.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk-every-street.html"/></url>
   <!-- cg:city-pages -->
   <url><loc>https://cobblegobble.app/city/amsterdam.html</loc><lastmod>2026-10-15</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/amsterdam.html"/>
@@ -674,5 +682,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/zurich.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/zurich.html"/>
     <image:image><image:loc>https://cobblegobble.app/assets/img/map-zurich-full.png</image:loc></image:image></url>
+  <url><loc>https://cobblegobble.app/walk/florence.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/florence.html"/></url>
+  <url><loc>https://cobblegobble.app/de/walk/florence.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/florence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/florence.html"/></url>
   <!-- /cg:city-pages -->
 </urlset>

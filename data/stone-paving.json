@@ -97,6 +97,14 @@
       "totalM" : 17478.5
     },
     {
+      "cityId" : "cologne",
+      "packVersion" : 16,
+      "pavingStonesM" : 7980.1,
+      "stoneM" : 5466.9,
+      "surfacedM" : 22512.1,
+      "totalM" : 23464.6
+    },
+    {
       "cityId" : "copenhagen",
       "packVersion" : 17,
       "pavingStonesM" : 5760.1,
