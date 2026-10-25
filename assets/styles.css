@@ -496,6 +496,11 @@ main{flex:1}
 .measured tbody th{font-weight:600}
 .measured tbody th a{color:var(--gold-deep); text-decoration:none}
 .measured .num{text-align:right; font-variant-numeric:tabular-nums}
+.sort-btn{all:unset; cursor:pointer; color:inherit; font:inherit}
+.sort-btn:focus-visible{outline:2px solid var(--gold-deep); outline-offset:2px; border-radius:3px}
+.sort-btn::after{content:"↕"; margin-left:.3em; opacity:.35}
+[aria-sort=ascending] .sort-btn::after{content:"↑"; opacity:1}
+[aria-sort=descending] .sort-btn::after{content:"↓"; opacity:1}
 .maps{list-style:none; padding:0; margin:0; display:grid; gap:1.4rem; grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .map-card img{display:block; width:100%; height:auto; border-radius:12px}
 .map-card .n{margin:.5rem 0 .2rem; font-weight:600; display:flex; justify-content:space-between; gap:1rem}

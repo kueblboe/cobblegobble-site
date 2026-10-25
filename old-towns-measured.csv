@@ -1,5 +1,5 @@
 rank,old_town,country,streets,km_on_foot,hours_at_a_stroll,streets_with_steps,page
-1,Palma,Spain,320,45.0,13,22,https://cobblegobble.app/city/palma.html
+1,Palma,Spain,319,44.9,13,22,https://cobblegobble.app/city/palma.html
 2,Toledo,Spain,318,40.4,11.5,66,https://cobblegobble.app/city/toledo.html
 3,Lisbon,Portugal,269,43.1,12.5,77,https://cobblegobble.app/city/lisbon.html
 4,Verona,Italy,236,33.2,9.5,7,https://cobblegobble.app/city/verona.html
@@ -16,8 +16,8 @@ rank,old_town,country,streets,km_on_foot,hours_at_a_stroll,streets_with_steps,pa
 15,York,United Kingdom,194,33.8,9.5,7,https://cobblegobble.app/city/york.html
 16,Valencia,Spain,192,21.1,6,1,https://cobblegobble.app/city/valencia.html
 17,Dublin,Ireland,185,43.0,12.5,10,https://cobblegobble.app/city/dublin.html
-18,Budapest,Hungary,176,55.6,16,18,https://cobblegobble.app/city/budapest.html
-19,Edinburgh,United Kingdom,170,31.6,9,42,https://cobblegobble.app/city/edinburgh.html
+18,Budapest,Hungary,176,55.3,16,18,https://cobblegobble.app/city/budapest.html
+19,Edinburgh,United Kingdom,170,31.0,9,42,https://cobblegobble.app/city/edinburgh.html
 20,Bologna,Italy,168,38.7,11,1,https://cobblegobble.app/city/bologna.html
 21,Porto,Portugal,160,28.8,8,21,https://cobblegobble.app/city/porto.html
 22,Strasbourg,France,157,28.1,8,2,https://cobblegobble.app/city/strasbourg.html
@@ -26,7 +26,7 @@ rank,old_town,country,streets,km_on_foot,hours_at_a_stroll,streets_with_steps,pa
 25,Santiago de Compostela,Spain,135,23.9,7,13,https://cobblegobble.app/city/santiago.html
 26,Munich,Germany,132,31.4,9,5,https://cobblegobble.app/city/munich.html
 27,Bruges,Belgium,129,22.9,6.5,1,https://cobblegobble.app/city/bruges.html
-28,Bamberg,Germany,124,28.0,8,5,https://cobblegobble.app/city/bamberg.html
+28,Bamberg,Germany,124,27.6,8,5,https://cobblegobble.app/city/bamberg.html
 29,Copenhagen,Denmark,122,30.1,8.5,3,https://cobblegobble.app/city/copenhagen.html
 30,Zurich,Switzerland,112,20.1,5.5,18,https://cobblegobble.app/city/zurich.html
 31,Bath,United Kingdom,110,16.8,5,3,https://cobblegobble.app/city/bath.html
@@ -38,7 +38,7 @@ rank,old_town,country,streets,km_on_foot,hours_at_a_stroll,streets_with_steps,pa
 37,Stockholm,Sweden,101,18.3,5,8,https://cobblegobble.app/city/stockholm.html
 38,Salzburg,Austria,98,27.1,7.5,10,https://cobblegobble.app/city/salzburg.html
 39,Leuven,Belgium,97,22.9,6.5,6,https://cobblegobble.app/city/leuven.html
-40,Bern,Switzerland,94,21.2,6,10,https://cobblegobble.app/city/bern.html
+40,Bern,Switzerland,94,21.1,6,10,https://cobblegobble.app/city/bern.html
 41,Lübeck,Germany,93,23.0,6.5,2,https://cobblegobble.app/city/lubeck.html
 42,Girona,Spain,91,12.2,3.5,25,https://cobblegobble.app/city/girona.html
 43,Heidelberg,Germany,85,22.3,6.5,8,https://cobblegobble.app/city/heidelberg.html

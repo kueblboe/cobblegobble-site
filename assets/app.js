@@ -54,6 +54,46 @@
     });
   });
 
+  /* Sortable tables — a header becomes a button that sorts its column. Without JS the
+     table keeps the order it was generated in, which is the order the page ranks by.
+     Numeric cells carry their plain value in data-v (the visible text is localized);
+     an empty data-v always sorts last. The first click sorts numbers biggest first and
+     text A to Z; a second click flips it. The # column keeps each row's original rank. */
+  document.querySelectorAll("table[data-sortable]").forEach(function (table) {
+    var body = table.tBodies[0];
+    var heads = table.tHead ? table.tHead.rows[0].cells : [];
+    var coll = new Intl.Collator(root.lang || undefined, { sensitivity: "base" });
+    Array.prototype.forEach.call(heads, function (th, col) {
+      var numeric = col === 0 || th.classList.contains("num");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "sort-btn";
+      while (th.firstChild) b.appendChild(th.firstChild);
+      th.appendChild(b);
+      if (col === 0) th.setAttribute("aria-sort", "ascending");
+      b.addEventListener("click", function () {
+        var cur = th.getAttribute("aria-sort");
+        var asc = cur ? cur === "descending" : !numeric || col === 0;
+        Array.prototype.forEach.call(heads, function (h) { h.removeAttribute("aria-sort"); });
+        th.setAttribute("aria-sort", asc ? "ascending" : "descending");
+        var rows = Array.prototype.slice.call(body.rows);
+        rows.sort(function (ra, rb) {
+          var a = ra.cells[col], c = rb.cells[col], d;
+          if (numeric) {
+            var va = a.getAttribute("data-v"), vb = c.getAttribute("data-v");
+            if (va === "" || vb === "") return (va === "") - (vb === "");
+            d = parseFloat(va) - parseFloat(vb);
+          } else {
+            d = coll.compare(a.textContent.trim(), c.textContent.trim());
+          }
+          if (!d) d = parseFloat(ra.cells[0].getAttribute("data-v")) - parseFloat(rb.cells[0].getAttribute("data-v"));
+          return asc ? d : -d;
+        });
+        rows.forEach(function (r) { body.appendChild(r); });
+      });
+    });
+  });
+
   /* Campaign attribution — turn ?ct=<campaign> into an App Store campaign link.
 
      A printed partner card's QR points at /go/<city>-<placement>.html, which forwards
