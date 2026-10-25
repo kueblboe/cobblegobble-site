@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Europe's Old Towns, measured: streets, distance and walking time | Cobble Gobble</title>
+<meta name="description" content="How many streets each Old Town has, how far it is to walk every one of them, and how long that takes at a stroll. Counted from OpenStreetMap, free to quote.">
+<link rel="canonical" href="https://cobblegobble.app/old-towns-measured.html">
+<link rel="alternate" hreflang="en" href="https://cobblegobble.app/old-towns-measured.html">
+<link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/old-towns-measured.html">
+<link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/old-towns-measured.html">
+<meta name="theme-color" content="#F2EAD9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1913" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Europe's Old Towns, measured: streets, distance and walking time | Cobble Gobble">
+<meta property="og:description" content="How many streets each Old Town has, how far it is to walk every one of them, and how long that takes at a stroll. Counted from OpenStreetMap, free to quote.">
+<meta property="og:image" content="https://cobblegobble.app/assets/img/og.png">
+<meta property="og:url" content="https://cobblegobble.app/old-towns-measured.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>try{var t=localStorage.getItem('cg-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{if(!localStorage.getItem('cg-lang')&&(navigator.language||'').toLowerCase().indexOf('de')===0){location.replace('/de/old-towns-measured.html')}}catch(e){}</script>
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@graph" : [
+    {
+      "@type" : "Dataset",
+      "creator" : {
+        "@type" : "Organization",
+        "name" : "Cobble Gobble",
+        "url" : "https://cobblegobble.app/"
+      },
+      "description" : "Streets, walking distance to cover every street, and walking time for the Old Towns in Cobble Gobble, counted from OpenStreetMap.",
+      "distribution" : [
+        {
+          "@type" : "DataDownload",
+          "contentUrl" : "https://cobblegobble.app/old-towns-measured.csv",
+          "encodingFormat" : "text/csv"
+        }
+      ],
+      "isAccessibleForFree" : true,
+      "license" : "https://opendatacommons.org/licenses/odbl/1-0/",
+      "name" : "Europe's Old Towns, measured",
+      "url" : "https://cobblegobble.app/old-towns-measured.html",
+      "variableMeasured" : [
+        "Streets",
+        "km on foot",
+        "Hours",
+        "Streets with steps"
+      ]
+    },
+    {
+      "@type" : "BreadcrumbList",
+      "itemListElement" : [
+        {
+          "@type" : "ListItem",
+          "item" : "https://cobblegobble.app/",
+          "name" : "Cobble Gobble",
+          "position" : 1
+        },
+        {
+          "@type" : "ListItem",
+          "item" : "https://cobblegobble.app/cities.html",
+          "name" : "Old Towns",
+          "position" : 2
+        },
+        {
+          "@type" : "ListItem",
+          "item" : "https://cobblegobble.app/old-towns-measured.html",
+          "name" : "Measured",
+          "position" : 3
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/img/cobble.svg" alt="">Cobble&nbsp;Gobble</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/#how">How it plays</a>
+      <a href="/cities.html">Cities</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/privacy.html" class="hide-sm">Privacy</a>
+      <a href="/press.html">Press</a>
+    </nav>
+    <p class="lang-toggle"><a href="/old-towns-measured.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="/de/old-towns-measured.html" hreflang="de" lang="de">DE</a></p>
+    <button class="theme-btn" type="button" aria-label="Switch colour theme">☽︎</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <nav class="crumbs wrap" aria-label="Breadcrumb">
+    <a href="/">Cobble Gobble</a> <span aria-hidden="true">›</span>
+    <a href="/cities.html">Old Towns</a> <span aria-hidden="true">›</span>
+    <span aria-current="page">Measured</span>
+  </nav>
+
+  <section class="hub-head">
+    <div class="wrap narrow">
+      <p class="eyebrow">Data</p>
+      <h1>Europe's Old Towns, measured.</h1>
+      <p class="lede">How many streets each Old Town has, how far it is to walk every one of them, and how long that takes at a stroll. Counted street by street, not taken from a guidebook.</p>
+      <ul class="highlights">
+        <li>The longest walk is <a href="/city/palma.html">Palma</a>: 320 streets, 45.0 km to walk them all, about 13 hours.</li>
+        <li>The shortest is <a href="/city/pilsen.html">Pilsen</a>: 23 streets, 7.8 km, about 2 hours.</li>
+        <li>The most stairs for its size: <a href="/city/dubrovnik.html">Dubrovnik</a>, where 50 of 82 streets include a stretch of steps.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="table" class="hub-country">
+    <div class="wrap">
+  <div class="table-scroll">
+    <table class="measured">
+      <thead><tr><th scope="col">#</th><th scope="col">Old Town</th><th scope="col">Country</th><th scope="col" class="num">Streets</th><th scope="col" class="num">km on foot</th><th scope="col" class="num">Hours</th><th scope="col" class="num">Streets with steps</th></tr></thead>
+      <tbody>
+            <tr><td>1</td><th scope="row"><a href="/city/palma.html">Palma</a></th><td>Spain</td><td class="num">320</td><td class="num">45.0</td><td class="num">13</td><td class="num">22</td></tr>
+            <tr><td>2</td><th scope="row"><a href="/city/toledo.html">Toledo</a></th><td>Spain</td><td class="num">318</td><td class="num">40.4</td><td class="num">11.5</td><td class="num">66</td></tr>
+            <tr><td>3</td><th scope="row"><a href="/city/lisbon.html">Lisbon</a></th><td>Portugal</td><td class="num">269</td><td class="num">43.1</td><td class="num">12.5</td><td class="num">77</td></tr>
+            <tr><td>4</td><th scope="row"><a href="/city/verona.html">Verona</a></th><td>Italy</td><td class="num">236</td><td class="num">33.2</td><td class="num">9.5</td><td class="num">7</td></tr>
+            <tr><td>5</td><th scope="row"><a href="/city/florence.html">Florence</a></th><td>Italy</td><td class="num">235</td><td class="num">38.9</td><td class="num">11</td><td class="num">4</td></tr>
+            <tr><td>6</td><th scope="row"><a href="/city/lyon.html">Lyon</a></th><td>France</td><td class="num">234</td><td class="num">44.6</td><td class="num">12.5</td><td class="num">21</td></tr>
+            <tr><td>7</td><th scope="row"><a href="/city/siena.html">Siena</a></th><td>Italy</td><td class="num">223</td><td class="num">40.5</td><td class="num">11.5</td><td class="num">32</td></tr>
+            <tr><td>8</td><th scope="row"><a href="/city/vienna.html">Vienna</a></th><td>Austria</td><td class="num">219</td><td class="num">48.8</td><td class="num">14</td><td class="num">8</td></tr>
+            <tr><td>9</td><th scope="row"><a href="/city/nuremberg.html">Nuremberg</a></th><td>Germany</td><td class="num">217</td><td class="num">45.2</td><td class="num">13</td><td class="num">15</td></tr>
+            <tr><td>10</td><th scope="row"><a href="/city/lucca.html">Lucca</a></th><td>Italy</td><td class="num">217</td><td class="num">38.7</td><td class="num">11</td><td class="num">0</td></tr>
+            <tr><td>11</td><th scope="row"><a href="/city/venice.html">Venice</a></th><td>Italy</td><td class="num">217</td><td class="num">22.3</td><td class="num">6.5</td><td class="num">15</td></tr>
+            <tr><td>12</td><th scope="row"><a href="/city/seville.html">Seville</a></th><td>Spain</td><td class="num">200</td><td class="num">33.9</td><td class="num">9.5</td><td class="num">5</td></tr>
+            <tr><td>13</td><th scope="row"><a href="/city/ghent.html">Ghent</a></th><td>Belgium</td><td class="num">199</td><td class="num">34.0</td><td class="num">9.5</td><td class="num">9</td></tr>
+            <tr><td>14</td><th scope="row"><a href="/city/regensburg.html">Regensburg</a></th><td>Germany</td><td class="num">196</td><td class="num">37.2</td><td class="num">10.5</td><td class="num">4</td></tr>
+            <tr><td>15</td><th scope="row"><a href="/city/york.html">York</a></th><td>United Kingdom</td><td class="num">194</td><td class="num">33.8</td><td class="num">9.5</td><td class="num">7</td></tr>
+            <tr><td>16</td><th scope="row"><a href="/city/valencia.html">Valencia</a></th><td>Spain</td><td class="num">192</td><td class="num">21.1</td><td class="num">6</td><td class="num">1</td></tr>
+            <tr><td>17</td><th scope="row"><a href="/city/dublin.html">Dublin</a></th><td>Ireland</td><td class="num">185</td><td class="num">43.0</td><td class="num">12.5</td><td class="num">10</td></tr>
+            <tr><td>18</td><th scope="row"><a href="/city/budapest.html">Budapest</a></th><td>Hungary</td><td class="num">176</td><td class="num">55.6</td><td class="num">16</td><td class="num">18</td></tr>
+            <tr><td>19</td><th scope="row"><a href="/city/edinburgh.html">Edinburgh</a></th><td>United Kingdom</td><td class="num">170</td><td class="num">31.6</td><td class="num">9</td><td class="num">42</td></tr>
+            <tr><td>20</td><th scope="row"><a href="/city/bologna.html">Bologna</a></th><td>Italy</td><td class="num">168</td><td class="num">38.7</td><td class="num">11</td><td class="num">1</td></tr>
+            <tr><td>21</td><th scope="row"><a href="/city/porto.html">Porto</a></th><td>Portugal</td><td class="num">160</td><td class="num">28.8</td><td class="num">8</td><td class="num">21</td></tr>
+            <tr><td>22</td><th scope="row"><a href="/city/strasbourg.html">Strasbourg</a></th><td>France</td><td class="num">157</td><td class="num">28.1</td><td class="num">8</td><td class="num">2</td></tr>
+            <tr><td>23</td><th scope="row"><a href="/city/amsterdam.html">Amsterdam</a></th><td>Netherlands</td><td class="num">156</td><td class="num">31.9</td><td class="num">9</td><td class="num">5</td></tr>
+            <tr><td>24</td><th scope="row"><a href="/city/paris.html">Paris</a></th><td>France</td><td class="num">143</td><td class="num">35.2</td><td class="num">10</td><td class="num">3</td></tr>
+            <tr><td>25</td><th scope="row"><a href="/city/santiago.html">Santiago de Compostela</a></th><td>Spain</td><td class="num">135</td><td class="num">23.9</td><td class="num">7</td><td class="num">13</td></tr>
+            <tr><td>26</td><th scope="row"><a href="/city/munich.html">Munich</a></th><td>Germany</td><td class="num">132</td><td class="num">31.4</td><td class="num">9</td><td class="num">5</td></tr>
+            <tr><td>27</td><th scope="row"><a href="/city/bruges.html">Bruges</a></th><td>Belgium</td><td class="num">129</td><td class="num">22.9</td><td class="num">6.5</td><td class="num">1</td></tr>
+            <tr><td>28</td><th scope="row"><a href="/city/bamberg.html">Bamberg</a></th><td>Germany</td><td class="num">124</td><td class="num">28.0</td><td class="num">8</td><td class="num">5</td></tr>
+            <tr><td>29</td><th scope="row"><a href="/city/copenhagen.html">Copenhagen</a></th><td>Denmark</td><td class="num">122</td><td class="num">30.1</td><td class="num">8.5</td><td class="num">3</td></tr>
+            <tr><td>30</td><th scope="row"><a href="/city/zurich.html">Zurich</a></th><td>Switzerland</td><td class="num">112</td><td class="num">20.1</td><td class="num">5.5</td><td class="num">18</td></tr>
+            <tr><td>31</td><th scope="row"><a href="/city/bath.html">Bath</a></th><td>United Kingdom</td><td class="num">110</td><td class="num">16.8</td><td class="num">5</td><td class="num">3</td></tr>
+            <tr><td>32</td><th scope="row"><a href="/city/prague.html">Prague</a></th><td>Czechia</td><td class="num">109</td><td class="num">27.3</td><td class="num">8</td><td class="num">4</td></tr>
+            <tr><td>33</td><th scope="row"><a href="/city/colmar.html">Colmar</a></th><td>France</td><td class="num">108</td><td class="num">22.0</td><td class="num">6.5</td><td class="num">0</td></tr>
+            <tr><td>34</td><th scope="row"><a href="/city/berlin.html">Berlin</a></th><td>Germany</td><td class="num">107</td><td class="num">39.5</td><td class="num">11.5</td><td class="num">10</td></tr>
+            <tr><td>35</td><th scope="row"><a href="/city/ljubljana.html">Ljubljana</a></th><td>Slovenia</td><td class="num">106</td><td class="num">26.7</td><td class="num">7.5</td><td class="num">12</td></tr>
+            <tr><td>36</td><th scope="row"><a href="/city/hamburg.html">Hamburg</a></th><td>Germany</td><td class="num">103</td><td class="num">23.8</td><td class="num">7</td><td class="num">7</td></tr>
+            <tr><td>37</td><th scope="row"><a href="/city/stockholm.html">Stockholm</a></th><td>Sweden</td><td class="num">101</td><td class="num">18.3</td><td class="num">5</td><td class="num">8</td></tr>
+            <tr><td>38</td><th scope="row"><a href="/city/salzburg.html">Salzburg</a></th><td>Austria</td><td class="num">98</td><td class="num">27.1</td><td class="num">7.5</td><td class="num">10</td></tr>
+            <tr><td>39</td><th scope="row"><a href="/city/leuven.html">Leuven</a></th><td>Belgium</td><td class="num">97</td><td class="num">22.9</td><td class="num">6.5</td><td class="num">6</td></tr>
+            <tr><td>40</td><th scope="row"><a href="/city/bern.html">Bern</a></th><td>Switzerland</td><td class="num">94</td><td class="num">21.2</td><td class="num">6</td><td class="num">10</td></tr>
+            <tr><td>41</td><th scope="row"><a href="/city/lubeck.html">Lübeck</a></th><td>Germany</td><td class="num">93</td><td class="num">23.0</td><td class="num">6.5</td><td class="num">2</td></tr>
+            <tr><td>42</td><th scope="row"><a href="/city/girona.html">Girona</a></th><td>Spain</td><td class="num">91</td><td class="num">12.2</td><td class="num">3.5</td><td class="num">25</td></tr>
+            <tr><td>43</td><th scope="row"><a href="/city/heidelberg.html">Heidelberg</a></th><td>Germany</td><td class="num">85</td><td class="num">22.3</td><td class="num">6.5</td><td class="num">8</td></tr>
+            <tr><td>44</td><th scope="row"><a href="/city/dubrovnik.html">Dubrovnik</a></th><td>Croatia</td><td class="num">82</td><td class="num">10.2</td><td class="num">3</td><td class="num">50</td></tr>
+            <tr><td>45</td><th scope="row"><a href="/city/passau.html">Passau</a></th><td>Germany</td><td class="num">81</td><td class="num">18.3</td><td class="num">5</td><td class="num">13</td></tr>
+            <tr><td>46</td><th scope="row"><a href="/city/rothenburg.html">Rothenburg ob der Tauber</a></th><td>Germany</td><td class="num">74</td><td class="num">15.1</td><td class="num">4.5</td><td class="num">4</td></tr>
+            <tr><td>47</td><th scope="row"><a href="/city/split.html">Split</a></th><td>Croatia</td><td class="num">72</td><td class="num">8.5</td><td class="num">2.5</td><td class="num">8</td></tr>
+            <tr><td>48</td><th scope="row"><a href="/city/landshut.html">Landshut</a></th><td>Germany</td><td class="num">71</td><td class="num">16.4</td><td class="num">4.5</td><td class="num">4</td></tr>
+            <tr><td>49</td><th scope="row"><a href="/city/dinkelsbuhl.html">Dinkelsbühl</a></th><td>Germany</td><td class="num">70</td><td class="num">15.4</td><td class="num">4.5</td><td class="num">8</td></tr>
+            <tr><td>50</td><th scope="row"><a href="/city/riga.html">Riga</a></th><td>Latvia</td><td class="num">67</td><td class="num">14.0</td><td class="num">4</td><td class="num">3</td></tr>
+            <tr><td>51</td><th scope="row"><a href="/city/tallinn.html">Tallinn</a></th><td>Estonia</td><td class="num">66</td><td class="num">14.0</td><td class="num">4</td><td class="num">3</td></tr>
+            <tr><td>52</td><th scope="row"><a href="/city/wasserburg.html">Wasserburg am Inn</a></th><td>Germany</td><td class="num">61</td><td class="num">14.5</td><td class="num">4</td><td class="num">3</td></tr>
+            <tr><td>53</td><th scope="row"><a href="/city/vilnius.html">Vilnius</a></th><td>Lithuania</td><td class="num">57</td><td class="num">17.9</td><td class="num">5</td><td class="num">0</td></tr>
+            <tr><td>54</td><th scope="row"><a href="/city/krakow.html">Kraków</a></th><td>Poland</td><td class="num">43</td><td class="num">18.2</td><td class="num">5</td><td class="num">4</td></tr>
+            <tr><td>55</td><th scope="row"><a href="/city/ceskykrumlov.html">Český Krumlov</a></th><td>Czechia</td><td class="num">35</td><td class="num">8.2</td><td class="num">2.5</td><td class="num">5</td></tr>
+            <tr><td>56</td><th scope="row"><a href="/city/trebon.html">Třeboň</a></th><td>Czechia</td><td class="num">31</td><td class="num">8.3</td><td class="num">2.5</td><td class="num">0</td></tr>
+            <tr><td>57</td><th scope="row"><a href="/city/buxtehude.html">Buxtehude</a></th><td>Germany</td><td class="num">31</td><td class="num">5.2</td><td class="num">1.5</td><td class="num">0</td></tr>
+            <tr><td>58</td><th scope="row"><a href="/city/pilsen.html">Pilsen</a></th><td>Czechia</td><td class="num">23</td><td class="num">7.8</td><td class="num">2</td><td class="num">1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="src"><a href="/old-towns-measured.csv" download>Download as CSV</a></p>
+    </div>
+  </section>
+
+  <section id="method" class="band">
+    <div class="wrap narrow">
+      <h2>How it is measured</h2>
+      <dl class="plan">
+        <dt>Old Town</dt><dd>The historic centre as the city defines it where it publishes a boundary (an Altstadt district, a walled ring), otherwise the core a visitor walks. Every boundary is drawn on its city page. A level is sized to be walked over a trip, so in the biggest cities it covers the core, not every street of a large historic district: the ranking compares walks, not city areas.</dd>
+        <dt>Streets</dt><dd>Every street, lane, square and footbridge inside that line, from OpenStreetMap.</dd>
+        <dt>km on foot</dt><dd>One route that walks every street at least once, doubling back where a dead end makes you. Longer than the streets laid end to end.</dd>
+        <dt>Hours</dt><dd>That route at 3.5 km/h, a stroll with stops for looking, rounded to the half hour.</dd>
+        <dt>Streets with steps</dt><dd>Streets that include a stretch mapped as steps. A dash means the level was built before steps were counted, not that there are none.</dd>
+        <dt>Using the numbers</dt><dd>Quote them freely. A link to this page or to the city's own page is all we ask. Map data © OpenStreetMap contributors (ODbL).</dd>
+      </dl>
+      <p class="mb0"><a href="/maps.html">Free maps of every Old Town for your article</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand"><img src="/assets/img/cobble.svg" alt="">Cobble Gobble</div>
+      <p class="meta-line">A cozy, heads-up, pressure-free city-walking game.<br>Made with love in Bavaria.</p>
+      <p class="meta-line foot-social mb0"><strong>@cobblegobbleapp</strong> on
+        <a href="https://www.instagram.com/cobblegobbleapp/">Instagram</a>,
+        <a href="https://www.pinterest.com/cobblegobbleapp/">Pinterest</a>,
+        <a href="https://www.tiktok.com/@cobblegobbleapp">TikTok</a> and
+        <a href="https://www.youtube.com/@cobblegobbleapp">YouTube</a>.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>The game</h2>
+      <a href="/#how">How it plays</a>
+      <a href="/cities.html">Cities</a>
+      <a href="/accessibility.html">Accessibility</a>
+      <a href="/press.html">Press &amp; media</a>
+      <a href="/old-towns-measured.html">Old Towns, measured</a>
+      <a href="/maps.html">Free maps</a>
+    </nav>
+    <nav aria-label="More">
+      <h2>Fine print</h2>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/support.html">Help &amp; support</a>
+      <a href="/impressum.html">Impressum</a>
+      <a href="mailto:hello@cobblegobble.app">hello@cobblegobble.app</a>
+    </nav>
+    <div class="colophon">
+      <span>© 2026 Cobble Gobble</span>
+      <span>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
