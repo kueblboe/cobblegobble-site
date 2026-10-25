@@ -34,6 +34,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/maps.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/maps.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/maps.html"/></url>
+  <url><loc>https://cobblegobble.app/most-cobbled-old-towns.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/most-cobbled-old-towns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/most-cobbled-old-towns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/most-cobbled-old-towns.html"/></url>
+  <url><loc>https://cobblegobble.app/de/most-cobbled-old-towns.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/most-cobbled-old-towns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/most-cobbled-old-towns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/most-cobbled-old-towns.html"/></url>
   <url><loc>https://cobblegobble.app/accessibility.html</loc><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/accessibility.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/accessibility.html"/>

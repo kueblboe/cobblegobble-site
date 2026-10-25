@@ -1,0 +1,493 @@
+{
+  "cities" : [
+    {
+      "cityId" : "amsterdam",
+      "packVersion" : 20,
+      "pavingStonesM" : 19255.3,
+      "stoneM" : 1226.6,
+      "surfacedM" : 22505.8,
+      "totalM" : 25567
+    },
+    {
+      "cityId" : "bamberg",
+      "packVersion" : 30,
+      "pavingStonesM" : 2080.5,
+      "stoneM" : 6091.6,
+      "surfacedM" : 22328.2,
+      "totalM" : 22328.2
+    },
+    {
+      "cityId" : "bath",
+      "packVersion" : 15,
+      "pavingStonesM" : 3522.4,
+      "stoneM" : 756,
+      "surfacedM" : 11332.1,
+      "totalM" : 13046.5
+    },
+    {
+      "cityId" : "berlin",
+      "packVersion" : 35,
+      "pavingStonesM" : 5074.1,
+      "stoneM" : 4101.7,
+      "surfacedM" : 30938.4,
+      "totalM" : 31184.4
+    },
+    {
+      "cityId" : "bern",
+      "packVersion" : 18,
+      "pavingStonesM" : 95.6,
+      "stoneM" : 4741.6,
+      "surfacedM" : 16435.9,
+      "totalM" : 17111.4
+    },
+    {
+      "cityId" : "bologna",
+      "packVersion" : 39,
+      "pavingStonesM" : 8705.3,
+      "stoneM" : 7513.9,
+      "surfacedM" : 29156.1,
+      "totalM" : 29922
+    },
+    {
+      "cityId" : "bruges",
+      "packVersion" : 18,
+      "pavingStonesM" : 528.5,
+      "stoneM" : 16592.5,
+      "surfacedM" : 17890.9,
+      "totalM" : 17895.9
+    },
+    {
+      "cityId" : "brussels",
+      "packVersion" : 2,
+      "pavingStonesM" : 2171.7,
+      "stoneM" : 6900.3,
+      "surfacedM" : 13759.2,
+      "totalM" : 14029.6
+    },
+    {
+      "cityId" : "budapest",
+      "packVersion" : 22,
+      "pavingStonesM" : 12365.1,
+      "stoneM" : 9803,
+      "surfacedM" : 42652.3,
+      "totalM" : 44284.3
+    },
+    {
+      "cityId" : "buxtehude",
+      "packVersion" : 6,
+      "pavingStonesM" : 2024.4,
+      "stoneM" : 1397.2,
+      "surfacedM" : 3820.9,
+      "totalM" : 4252
+    },
+    {
+      "cityId" : "ceskykrumlov",
+      "packVersion" : 35,
+      "pavingStonesM" : 61.5,
+      "stoneM" : 4646.2,
+      "surfacedM" : 6635.7,
+      "totalM" : 6648.2
+    },
+    {
+      "cityId" : "colmar",
+      "packVersion" : 15,
+      "pavingStonesM" : 1065.5,
+      "stoneM" : 5929.6,
+      "surfacedM" : 17235.2,
+      "totalM" : 17478.5
+    },
+    {
+      "cityId" : "copenhagen",
+      "packVersion" : 17,
+      "pavingStonesM" : 5760.1,
+      "stoneM" : 4540.1,
+      "surfacedM" : 24005.3,
+      "totalM" : 24296.9
+    },
+    {
+      "cityId" : "dinkelsbuhl",
+      "packVersion" : 11,
+      "pavingStonesM" : 856.1,
+      "stoneM" : 8068.2,
+      "surfacedM" : 12312.6,
+      "totalM" : 12624.5
+    },
+    {
+      "cityId" : "dresden",
+      "packVersion" : 2,
+      "pavingStonesM" : 2449.2,
+      "stoneM" : 7066.7,
+      "surfacedM" : 15610.4,
+      "totalM" : 16064.3
+    },
+    {
+      "cityId" : "dublin",
+      "packVersion" : 27,
+      "pavingStonesM" : 3986.3,
+      "stoneM" : 3903,
+      "surfacedM" : 30022.4,
+      "totalM" : 33567.6
+    },
+    {
+      "cityId" : "dubrovnik",
+      "packVersion" : 8,
+      "pavingStonesM" : 3056,
+      "stoneM" : 1561,
+      "surfacedM" : 5372.6,
+      "totalM" : 8213.5
+    },
+    {
+      "cityId" : "edinburgh",
+      "packVersion" : 33,
+      "pavingStonesM" : 3525.4,
+      "stoneM" : 5988.9,
+      "surfacedM" : 20980.1,
+      "totalM" : 23781.7
+    },
+    {
+      "cityId" : "florence",
+      "packVersion" : 20,
+      "pavingStonesM" : 10542.6,
+      "stoneM" : 12546,
+      "surfacedM" : 30726.1,
+      "totalM" : 31732.8
+    },
+    {
+      "cityId" : "freyung",
+      "packVersion" : 19,
+      "pavingStonesM" : 159.6,
+      "stoneM" : 867.1,
+      "surfacedM" : 3903.9,
+      "totalM" : 8134.4
+    },
+    {
+      "cityId" : "ghent",
+      "packVersion" : 20,
+      "pavingStonesM" : 6937.9,
+      "stoneM" : 8464.4,
+      "surfacedM" : 26210.9,
+      "totalM" : 26978.8
+    },
+    {
+      "cityId" : "girona",
+      "packVersion" : 13,
+      "pavingStonesM" : 1328.3,
+      "stoneM" : 6026.6,
+      "surfacedM" : 8702.6,
+      "totalM" : 9963.1
+    },
+    {
+      "cityId" : "hamburg",
+      "packVersion" : 10,
+      "pavingStonesM" : 4969.4,
+      "stoneM" : 5718.2,
+      "surfacedM" : 19101.3,
+      "totalM" : 19322.3
+    },
+    {
+      "cityId" : "heidelberg",
+      "packVersion" : 20,
+      "pavingStonesM" : 4210.2,
+      "stoneM" : 6567,
+      "surfacedM" : 17602.6,
+      "totalM" : 17622
+    },
+    {
+      "cityId" : "krakow",
+      "packVersion" : 19,
+      "pavingStonesM" : 3269.7,
+      "stoneM" : 7571,
+      "surfacedM" : 13532.7,
+      "totalM" : 14096.7
+    },
+    {
+      "cityId" : "landshut",
+      "packVersion" : 23,
+      "pavingStonesM" : 2776.4,
+      "stoneM" : 5745.4,
+      "surfacedM" : 12325.8,
+      "totalM" : 12733.4
+    },
+    {
+      "cityId" : "leuven",
+      "packVersion" : 19,
+      "pavingStonesM" : 3883.5,
+      "stoneM" : 6362.9,
+      "surfacedM" : 18441.6,
+      "totalM" : 18700.6
+    },
+    {
+      "cityId" : "lisbon",
+      "packVersion" : 20,
+      "pavingStonesM" : 1311.7,
+      "stoneM" : 22921.2,
+      "surfacedM" : 30800.8,
+      "totalM" : 34805.8
+    },
+    {
+      "cityId" : "ljubljana",
+      "packVersion" : 29,
+      "pavingStonesM" : 2906.1,
+      "stoneM" : 3907.9,
+      "surfacedM" : 21152.1,
+      "totalM" : 21327.4
+    },
+    {
+      "cityId" : "lubeck",
+      "packVersion" : 12,
+      "pavingStonesM" : 2153.6,
+      "stoneM" : 11017.1,
+      "surfacedM" : 18962.7,
+      "totalM" : 18962.7
+    },
+    {
+      "cityId" : "lucca",
+      "packVersion" : 21,
+      "pavingStonesM" : 12166.1,
+      "stoneM" : 2701.7,
+      "surfacedM" : 28041.3,
+      "totalM" : 30406.7
+    },
+    {
+      "cityId" : "lyon",
+      "packVersion" : 23,
+      "pavingStonesM" : 3887,
+      "stoneM" : 5992.4,
+      "surfacedM" : 35282.5,
+      "totalM" : 35665.1
+    },
+    {
+      "cityId" : "munich",
+      "packVersion" : 41,
+      "pavingStonesM" : 7292.5,
+      "stoneM" : 3912.3,
+      "surfacedM" : 24748.1,
+      "totalM" : 24958.6
+    },
+    {
+      "cityId" : "nuremberg",
+      "packVersion" : 55,
+      "pavingStonesM" : 7935.8,
+      "stoneM" : 12810.2,
+      "surfacedM" : 36996.3,
+      "totalM" : 37092.2
+    },
+    {
+      "cityId" : "palma",
+      "packVersion" : 10,
+      "pavingStonesM" : 12972.9,
+      "stoneM" : 5249.7,
+      "surfacedM" : 29896.8,
+      "totalM" : 36072.1
+    },
+    {
+      "cityId" : "paris",
+      "packVersion" : 16,
+      "pavingStonesM" : 1041.6,
+      "stoneM" : 4084.1,
+      "surfacedM" : 28591.2,
+      "totalM" : 29060.2
+    },
+    {
+      "cityId" : "passau",
+      "packVersion" : 62,
+      "pavingStonesM" : 1627.8,
+      "stoneM" : 7664.8,
+      "surfacedM" : 14389.5,
+      "totalM" : 14438.3
+    },
+    {
+      "cityId" : "pilsen",
+      "packVersion" : 14,
+      "pavingStonesM" : 385.1,
+      "stoneM" : 5264.5,
+      "surfacedM" : 6182.3,
+      "totalM" : 6289.9
+    },
+    {
+      "cityId" : "porto",
+      "packVersion" : 24,
+      "pavingStonesM" : 2989,
+      "stoneM" : 14322.5,
+      "surfacedM" : 20508.6,
+      "totalM" : 23037.7
+    },
+    {
+      "cityId" : "prague",
+      "packVersion" : 36,
+      "pavingStonesM" : 555.9,
+      "stoneM" : 15352.4,
+      "surfacedM" : 22024.9,
+      "totalM" : 22175.4
+    },
+    {
+      "cityId" : "regensburg",
+      "packVersion" : 53,
+      "pavingStonesM" : 4374.6,
+      "stoneM" : 13274,
+      "surfacedM" : 29825,
+      "totalM" : 29940.4
+    },
+    {
+      "cityId" : "riga",
+      "packVersion" : 21,
+      "pavingStonesM" : 1086.3,
+      "stoneM" : 8863.6,
+      "surfacedM" : 11491.8,
+      "totalM" : 11658.5
+    },
+    {
+      "cityId" : "rothenburg",
+      "packVersion" : 10,
+      "pavingStonesM" : 131.6,
+      "stoneM" : 7908.2,
+      "surfacedM" : 12537.8,
+      "totalM" : 12537.8
+    },
+    {
+      "cityId" : "salzburg",
+      "packVersion" : 48,
+      "pavingStonesM" : 2722.7,
+      "stoneM" : 3989.7,
+      "surfacedM" : 21686.8,
+      "totalM" : 21782.1
+    },
+    {
+      "cityId" : "santiago",
+      "packVersion" : 17,
+      "pavingStonesM" : 9381,
+      "stoneM" : 1930.3,
+      "surfacedM" : 19476.4,
+      "totalM" : 19687.2
+    },
+    {
+      "cityId" : "seville",
+      "packVersion" : 24,
+      "pavingStonesM" : 8999.3,
+      "stoneM" : 10921.3,
+      "surfacedM" : 24239.4,
+      "totalM" : 26467.8
+    },
+    {
+      "cityId" : "siena",
+      "packVersion" : 20,
+      "pavingStonesM" : 5022,
+      "stoneM" : 18562.3,
+      "surfacedM" : 32259.4,
+      "totalM" : 32387
+    },
+    {
+      "cityId" : "split",
+      "packVersion" : 10,
+      "pavingStonesM" : 3765.9,
+      "stoneM" : 615.6,
+      "surfacedM" : 6513,
+      "totalM" : 6824.8
+    },
+    {
+      "cityId" : "stockholm",
+      "packVersion" : 17,
+      "pavingStonesM" : 850.8,
+      "stoneM" : 10492.3,
+      "surfacedM" : 14521.8,
+      "totalM" : 14786.3
+    },
+    {
+      "cityId" : "strasbourg",
+      "packVersion" : 26,
+      "pavingStonesM" : 8863.2,
+      "stoneM" : 5854.4,
+      "surfacedM" : 22921.4,
+      "totalM" : 22921.4
+    },
+    {
+      "cityId" : "tallinn",
+      "packVersion" : 21,
+      "pavingStonesM" : 855.9,
+      "stoneM" : 9253.1,
+      "surfacedM" : 11343,
+      "totalM" : 11343
+    },
+    {
+      "cityId" : "toledo",
+      "packVersion" : 18,
+      "pavingStonesM" : 3330.4,
+      "stoneM" : 24557.7,
+      "surfacedM" : 30208.6,
+      "totalM" : 32076
+    },
+    {
+      "cityId" : "trebon",
+      "packVersion" : 10,
+      "pavingStonesM" : 478.9,
+      "stoneM" : 1475.9,
+      "surfacedM" : 6280.8,
+      "totalM" : 6732.8
+    },
+    {
+      "cityId" : "valencia",
+      "packVersion" : 12,
+      "pavingStonesM" : 10866.7,
+      "stoneM" : 1150.9,
+      "surfacedM" : 15291.1,
+      "totalM" : 16856.6
+    },
+    {
+      "cityId" : "venice",
+      "packVersion" : 18,
+      "pavingStonesM" : 6913.6,
+      "stoneM" : 7757.6,
+      "surfacedM" : 14753,
+      "totalM" : 15867.6
+    },
+    {
+      "cityId" : "verona",
+      "packVersion" : 17,
+      "pavingStonesM" : 2368.7,
+      "stoneM" : 15542.5,
+      "surfacedM" : 25899.1,
+      "totalM" : 26631.7
+    },
+    {
+      "cityId" : "vienna",
+      "packVersion" : 33,
+      "pavingStonesM" : 5188.7,
+      "stoneM" : 6045.2,
+      "surfacedM" : 39838,
+      "totalM" : 39915.8
+    },
+    {
+      "cityId" : "vilnius",
+      "packVersion" : 11,
+      "pavingStonesM" : 4811.6,
+      "stoneM" : 5761.1,
+      "surfacedM" : 13868.4,
+      "totalM" : 13995.7
+    },
+    {
+      "cityId" : "wasserburg",
+      "packVersion" : 14,
+      "pavingStonesM" : 361.3,
+      "stoneM" : 2132.1,
+      "surfacedM" : 10722.7,
+      "totalM" : 11680.6
+    },
+    {
+      "cityId" : "york",
+      "packVersion" : 16,
+      "pavingStonesM" : 6435.3,
+      "stoneM" : 2514.5,
+      "surfacedM" : 23630.2,
+      "totalM" : 26718
+    },
+    {
+      "cityId" : "zurich",
+      "packVersion" : 31,
+      "pavingStonesM" : 636.6,
+      "stoneM" : 7954.4,
+      "surfacedM" : 15661,
+      "totalM" : 15833.9
+    }
+  ],
+  "coverageFloor" : 0.85
+}
