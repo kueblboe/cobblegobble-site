@@ -172,12 +172,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bruges.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bruges.html"/>
     <image:image><image:loc>https://cobblegobble.app/assets/img/map-bruges-full.png</image:loc></image:image></url>
-  <url><loc>https://cobblegobble.app/city/budapest.html</loc><lastmod>2026-10-15</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/city/budapest.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/budapest.html"/>
     <image:image><image:loc>https://cobblegobble.app/assets/img/map-budapest-full.png</image:loc></image:image></url>
-  <url><loc>https://cobblegobble.app/de/city/budapest.html</loc><lastmod>2026-10-15</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/city/budapest.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/budapest.html"/>
@@ -738,11 +738,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/bruges.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/bruges.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/bruges.html"/></url>
-  <url><loc>https://cobblegobble.app/walk/budapest.html</loc><lastmod>2026-10-15</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/walk/budapest.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/budapest.html"/></url>
-  <url><loc>https://cobblegobble.app/de/walk/budapest.html</loc><lastmod>2026-10-15</lastmod><priority>0.6</priority>
+  <url><loc>https://cobblegobble.app/de/walk/budapest.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/budapest.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/budapest.html"/></url>
