@@ -212,6 +212,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/colmar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/colmar.html"/>
     <image:image><image:loc>https://cobblegobble.app/assets/img/map-colmar-full.png</image:loc></image:image></url>
+  <url><loc>https://cobblegobble.app/city/cologne.html</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/cologne.html"/>
+    <image:image><image:loc>https://cobblegobble.app/assets/img/map-cologne-full.png</image:loc></image:image></url>
+  <url><loc>https://cobblegobble.app/de/city/cologne.html</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/cologne.html"/>
+    <image:image><image:loc>https://cobblegobble.app/assets/img/map-cologne-full.png</image:loc></image:image></url>
   <url><loc>https://cobblegobble.app/city/copenhagen.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/copenhagen.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/copenhagen.html"/>
@@ -770,6 +780,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/colmar.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/colmar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/colmar.html"/></url>
+  <url><loc>https://cobblegobble.app/walk/cologne.html</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/cologne.html"/></url>
+  <url><loc>https://cobblegobble.app/de/walk/cologne.html</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/cologne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/cologne.html"/></url>
   <url><loc>https://cobblegobble.app/walk/copenhagen.html</loc><lastmod>2026-10-25</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/copenhagen.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/copenhagen.html"/>
