@@ -434,11 +434,11 @@
     },
     {
       "cityId" : "valencia",
-      "packVersion" : 12,
-      "pavingStonesM" : 10866.7,
-      "stoneM" : 1150.9,
-      "surfacedM" : 15291.1,
-      "totalM" : 16856.6
+      "packVersion" : 15,
+      "pavingStonesM" : 10347.9,
+      "stoneM" : 1111.8,
+      "surfacedM" : 14756,
+      "totalM" : 16321.4
     },
     {
       "cityId" : "venice",
