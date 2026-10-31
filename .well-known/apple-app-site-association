@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4LQ6FDW763.com.newworkbydesign.cobblegobble"],
+        "components": [
+          { "/": "/city/*", "comment": "A city page opens that city in the app (Plan/SPEC_DeepLinks.md)" },
+          { "/": "/de/city/*", "comment": "The German city page, same city" }
+        ]
+      }
+    ]
+  }
+}

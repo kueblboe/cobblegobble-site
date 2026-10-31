@@ -1,18 +1,18 @@
 rank,old_town,country,cobbles_and_setts_pct,paving_stones_pct,surface_mapped_pct,page
 1,Bruges,Belgium,93,3,100,https://cobblegobble.app/city/bruges.html
-2,Pilsen,Czechia,84,6,98,https://cobblegobble.app/city/pilsen.html
+2,Pilsen,Czechia,84,6,99,https://cobblegobble.app/city/pilsen.html
 3,Tallinn,Estonia,82,8,100,https://cobblegobble.app/city/tallinn.html
 4,Toledo,Spain,77,10,94,https://cobblegobble.app/city/toledo.html
 5,Riga,Latvia,76,9,99,https://cobblegobble.app/city/riga.html
 6,Stockholm,Sweden,71,6,98,https://cobblegobble.app/city/stockholm.html
 7,Český Krumlov,Czechia,70,1,100,https://cobblegobble.app/city/ceskykrumlov.html
 8,Prague,Czechia,69,3,99,https://cobblegobble.app/city/prague.html
-9,Lisbon,Portugal,66,4,88,https://cobblegobble.app/city/lisbon.html
+9,Lisbon,Portugal,67,3,90,https://cobblegobble.app/city/lisbon.html
 10,Dinkelsbühl,Germany,64,7,98,https://cobblegobble.app/city/dinkelsbuhl.html
 11,Rothenburg ob der Tauber,Germany,63,1,100,https://cobblegobble.app/city/rothenburg.html
 12,Porto,Portugal,62,13,89,https://cobblegobble.app/city/porto.html
 13,Girona,Spain,60,13,87,https://cobblegobble.app/city/girona.html
-14,Verona,Italy,58,9,97,https://cobblegobble.app/city/verona.html
+14,Verona,Italy,59,9,98,https://cobblegobble.app/city/verona.html
 15,Lübeck,Germany,58,11,100,https://cobblegobble.app/city/lubeck.html
 16,Siena,Italy,57,16,100,https://cobblegobble.app/city/siena.html
 17,Kraków,Poland,54,23,96,https://cobblegobble.app/city/krakow.html
@@ -22,9 +22,9 @@ rank,old_town,country,cobbles_and_setts_pct,paving_stones_pct,surface_mapped_pct
 21,Landshut,Germany,45,22,97,https://cobblegobble.app/city/landshut.html
 22,Regensburg,Germany,44,15,100,https://cobblegobble.app/city/regensburg.html
 23,Seville,Spain,41,34,92,https://cobblegobble.app/city/seville.html
-24,Vilnius,Lithuania,41,34,99,https://cobblegobble.app/city/vilnius.html
+24,Vilnius,Lithuania,41,35,100,https://cobblegobble.app/city/vilnius.html
 25,Florence,Italy,40,33,97,https://cobblegobble.app/city/florence.html
-26,Heidelberg,Germany,37,24,100,https://cobblegobble.app/city/heidelberg.html
+26,Heidelberg,Germany,37,23,100,https://cobblegobble.app/city/heidelberg.html
 27,Nuremberg,Germany,35,21,100,https://cobblegobble.app/city/nuremberg.html
 28,Leuven,Belgium,34,21,99,https://cobblegobble.app/city/leuven.html
 29,Colmar,France,34,6,99,https://cobblegobble.app/city/colmar.html
@@ -37,7 +37,7 @@ rank,old_town,country,cobbles_and_setts_pct,paving_stones_pct,surface_mapped_pct
 36,Edinburgh,United Kingdom,25,15,88,https://cobblegobble.app/city/edinburgh.html
 37,Bologna,Italy,25,29,97,https://cobblegobble.app/city/bologna.html
 38,Cologne,Germany,23,34,96,https://cobblegobble.app/city/cologne.html
-39,Budapest,Hungary,22,28,96,https://cobblegobble.app/city/budapest.html
+39,Budapest,Hungary,22,28,98,https://cobblegobble.app/city/budapest.html
 40,Třeboň,Czechia,22,7,93,https://cobblegobble.app/city/trebon.html
 41,Copenhagen,Denmark,19,24,99,https://cobblegobble.app/city/copenhagen.html
 42,Ljubljana,Slovenia,18,14,99,https://cobblegobble.app/city/ljubljana.html
@@ -50,7 +50,7 @@ rank,old_town,country,cobbles_and_setts_pct,paving_stones_pct,surface_mapped_pct
 49,Berlin,Germany,13,16,99,https://cobblegobble.app/city/berlin.html
 50,Dublin,Ireland,12,12,89,https://cobblegobble.app/city/dublin.html
 51,Santiago de Compostela,Spain,10,48,99,https://cobblegobble.app/city/santiago.html
-52,York,United Kingdom,9,24,88,https://cobblegobble.app/city/york.html
+52,York,United Kingdom,10,24,88,https://cobblegobble.app/city/york.html
 53,Split,Croatia,9,55,95,https://cobblegobble.app/city/split.html
 54,Lucca,Italy,9,40,92,https://cobblegobble.app/city/lucca.html
 55,Valencia,Spain,7,63,90,https://cobblegobble.app/city/valencia.html
