@@ -66,11 +66,11 @@
     },
     {
       "cityId" : "budapest",
-      "packVersion" : 23,
-      "pavingStonesM" : 12259.4,
+      "packVersion" : 24,
+      "pavingStonesM" : 12153.8,
       "stoneM" : 9803,
-      "surfacedM" : 42548.3,
-      "totalM" : 43615.7
+      "surfacedM" : 42442.8,
+      "totalM" : 43460
     },
     {
       "cityId" : "buxtehude",
