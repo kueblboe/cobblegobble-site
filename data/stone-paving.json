@@ -25,6 +25,14 @@
       "totalM" : 22328.2
     },
     {
+      "cityId" : "barcelona",
+      "packVersion" : 13,
+      "pavingStonesM" : 17578.4,
+      "stoneM" : 587.6,
+      "surfacedM" : 21040.3,
+      "totalM" : 22802.9
+    },
+    {
       "cityId" : "bath",
       "packVersion" : 15,
       "pavingStonesM" : 3522.4,
