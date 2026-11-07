@@ -6,56 +6,57 @@ rank,old_town,country,streets,km_on_foot,hours_at_a_stroll,streets_with_steps,pa
 5,Verona,Italy,235,32.7,9.5,6,https://cobblegobble.app/city/verona.html
 6,Lyon,France,234,44.6,12.5,21,https://cobblegobble.app/city/lyon.html
 7,Siena,Italy,223,40.5,11.5,32,https://cobblegobble.app/city/siena.html
-8,Vienna,Austria,219,48.8,14,8,https://cobblegobble.app/city/vienna.html
-9,Nuremberg,Germany,217,45.2,13,15,https://cobblegobble.app/city/nuremberg.html
-10,Lucca,Italy,217,38.7,11,0,https://cobblegobble.app/city/lucca.html
-11,Venice,Italy,217,22.3,6.5,15,https://cobblegobble.app/city/venice.html
-12,Seville,Spain,200,33.9,9.5,5,https://cobblegobble.app/city/seville.html
-13,Ghent,Belgium,199,34.0,9.5,9,https://cobblegobble.app/city/ghent.html
-14,Regensburg,Germany,196,37.2,10.5,4,https://cobblegobble.app/city/regensburg.html
-15,York,United Kingdom,193,33.3,9.5,6,https://cobblegobble.app/city/york.html
-16,Valencia,Spain,188,20.2,6,1,https://cobblegobble.app/city/valencia.html
-17,Dublin,Ireland,185,43.0,12.5,10,https://cobblegobble.app/city/dublin.html
-18,Budapest,Hungary,174,54.6,15.5,17,https://cobblegobble.app/city/budapest.html
-19,Edinburgh,United Kingdom,170,31.0,9,42,https://cobblegobble.app/city/edinburgh.html
-20,Bologna,Italy,167,37.9,11,0,https://cobblegobble.app/city/bologna.html
-21,Porto,Portugal,160,28.8,8,21,https://cobblegobble.app/city/porto.html
-22,Strasbourg,France,157,28.1,8,2,https://cobblegobble.app/city/strasbourg.html
-23,Amsterdam,Netherlands,156,31.9,9,5,https://cobblegobble.app/city/amsterdam.html
-24,Paris,France,143,35.2,10,3,https://cobblegobble.app/city/paris.html
-25,Santiago de Compostela,Spain,135,23.9,7,13,https://cobblegobble.app/city/santiago.html
-26,Munich,Germany,132,31.4,9,5,https://cobblegobble.app/city/munich.html
-27,Bruges,Belgium,129,22.9,6.5,1,https://cobblegobble.app/city/bruges.html
-28,Cologne,Germany,124,29.2,8.5,3,https://cobblegobble.app/city/cologne.html
-29,Bamberg,Germany,124,27.6,8,5,https://cobblegobble.app/city/bamberg.html
-30,Copenhagen,Denmark,122,30.1,8.5,3,https://cobblegobble.app/city/copenhagen.html
-31,Athens,Greece,122,21.4,6,3,https://cobblegobble.app/city/athens.html
-32,Zurich,Switzerland,112,20.1,5.5,18,https://cobblegobble.app/city/zurich.html
-33,Bath,United Kingdom,110,16.8,5,3,https://cobblegobble.app/city/bath.html
-34,Prague,Czechia,109,27.3,8,4,https://cobblegobble.app/city/prague.html
-35,Colmar,France,108,22.0,6.5,0,https://cobblegobble.app/city/colmar.html
-36,Berlin,Germany,107,39.5,11.5,10,https://cobblegobble.app/city/berlin.html
-37,Ljubljana,Slovenia,106,26.7,7.5,12,https://cobblegobble.app/city/ljubljana.html
-38,Hamburg,Germany,103,23.8,7,7,https://cobblegobble.app/city/hamburg.html
-39,Stockholm,Sweden,101,18.3,5,8,https://cobblegobble.app/city/stockholm.html
-40,Salzburg,Austria,98,27.1,7.5,10,https://cobblegobble.app/city/salzburg.html
-41,Leuven,Belgium,97,22.9,6.5,6,https://cobblegobble.app/city/leuven.html
-42,Bern,Switzerland,94,21.1,6,10,https://cobblegobble.app/city/bern.html
-43,Lübeck,Germany,93,23.0,6.5,2,https://cobblegobble.app/city/lubeck.html
-44,Girona,Spain,91,12.2,3.5,25,https://cobblegobble.app/city/girona.html
-45,Heidelberg,Germany,84,21.9,6.5,8,https://cobblegobble.app/city/heidelberg.html
-46,Dubrovnik,Croatia,82,10.2,3,50,https://cobblegobble.app/city/dubrovnik.html
-47,Passau,Germany,81,18.3,5,13,https://cobblegobble.app/city/passau.html
-48,Rothenburg ob der Tauber,Germany,74,15.1,4.5,4,https://cobblegobble.app/city/rothenburg.html
-49,Split,Croatia,72,8.5,2.5,8,https://cobblegobble.app/city/split.html
-50,Landshut,Germany,71,16.4,4.5,4,https://cobblegobble.app/city/landshut.html
-51,Dinkelsbühl,Germany,70,15.4,4.5,8,https://cobblegobble.app/city/dinkelsbuhl.html
-52,Riga,Latvia,67,14.0,4,3,https://cobblegobble.app/city/riga.html
-53,Tallinn,Estonia,66,14.0,4,3,https://cobblegobble.app/city/tallinn.html
-54,Wasserburg am Inn,Germany,61,14.5,4,3,https://cobblegobble.app/city/wasserburg.html
-55,Vilnius,Lithuania,56,17.5,5,0,https://cobblegobble.app/city/vilnius.html
-56,Kraków,Poland,43,18.2,5,4,https://cobblegobble.app/city/krakow.html
-57,Český Krumlov,Czechia,35,8.2,2.5,5,https://cobblegobble.app/city/ceskykrumlov.html
-58,Třeboň,Czechia,31,8.3,2.5,0,https://cobblegobble.app/city/trebon.html
-59,Buxtehude,Germany,31,5.2,1.5,0,https://cobblegobble.app/city/buxtehude.html
-60,Pilsen,Czechia,22,7.4,2,1,https://cobblegobble.app/city/pilsen.html
+8,Barcelona,Spain,222,28.3,8,1,https://cobblegobble.app/city/barcelona.html
+9,Vienna,Austria,219,48.8,14,8,https://cobblegobble.app/city/vienna.html
+10,Nuremberg,Germany,217,45.2,13,15,https://cobblegobble.app/city/nuremberg.html
+11,Lucca,Italy,217,38.7,11,0,https://cobblegobble.app/city/lucca.html
+12,Venice,Italy,217,22.3,6.5,15,https://cobblegobble.app/city/venice.html
+13,Seville,Spain,200,33.9,9.5,5,https://cobblegobble.app/city/seville.html
+14,Ghent,Belgium,199,34.0,9.5,9,https://cobblegobble.app/city/ghent.html
+15,Regensburg,Germany,196,37.2,10.5,4,https://cobblegobble.app/city/regensburg.html
+16,York,United Kingdom,193,33.3,9.5,6,https://cobblegobble.app/city/york.html
+17,Valencia,Spain,188,20.2,6,1,https://cobblegobble.app/city/valencia.html
+18,Dublin,Ireland,185,43.0,12.5,10,https://cobblegobble.app/city/dublin.html
+19,Budapest,Hungary,174,54.6,15.5,17,https://cobblegobble.app/city/budapest.html
+20,Edinburgh,United Kingdom,170,31.0,9,42,https://cobblegobble.app/city/edinburgh.html
+21,Bologna,Italy,167,37.9,11,0,https://cobblegobble.app/city/bologna.html
+22,Porto,Portugal,160,28.8,8,21,https://cobblegobble.app/city/porto.html
+23,Strasbourg,France,157,28.1,8,2,https://cobblegobble.app/city/strasbourg.html
+24,Amsterdam,Netherlands,156,31.9,9,5,https://cobblegobble.app/city/amsterdam.html
+25,Paris,France,143,35.2,10,3,https://cobblegobble.app/city/paris.html
+26,Santiago de Compostela,Spain,135,23.9,7,13,https://cobblegobble.app/city/santiago.html
+27,Munich,Germany,132,31.4,9,5,https://cobblegobble.app/city/munich.html
+28,Bruges,Belgium,129,22.9,6.5,1,https://cobblegobble.app/city/bruges.html
+29,Cologne,Germany,124,29.2,8.5,3,https://cobblegobble.app/city/cologne.html
+30,Bamberg,Germany,124,27.6,8,5,https://cobblegobble.app/city/bamberg.html
+31,Copenhagen,Denmark,122,30.1,8.5,3,https://cobblegobble.app/city/copenhagen.html
+32,Athens,Greece,122,21.4,6,3,https://cobblegobble.app/city/athens.html
+33,Zurich,Switzerland,112,20.1,5.5,18,https://cobblegobble.app/city/zurich.html
+34,Bath,United Kingdom,110,16.8,5,3,https://cobblegobble.app/city/bath.html
+35,Prague,Czechia,109,27.3,8,4,https://cobblegobble.app/city/prague.html
+36,Colmar,France,108,22.0,6.5,0,https://cobblegobble.app/city/colmar.html
+37,Berlin,Germany,107,39.5,11.5,10,https://cobblegobble.app/city/berlin.html
+38,Ljubljana,Slovenia,106,26.7,7.5,12,https://cobblegobble.app/city/ljubljana.html
+39,Hamburg,Germany,103,23.8,7,7,https://cobblegobble.app/city/hamburg.html
+40,Stockholm,Sweden,101,18.3,5,8,https://cobblegobble.app/city/stockholm.html
+41,Salzburg,Austria,98,27.1,7.5,10,https://cobblegobble.app/city/salzburg.html
+42,Leuven,Belgium,97,22.9,6.5,6,https://cobblegobble.app/city/leuven.html
+43,Bern,Switzerland,94,21.1,6,10,https://cobblegobble.app/city/bern.html
+44,Lübeck,Germany,93,23.0,6.5,2,https://cobblegobble.app/city/lubeck.html
+45,Girona,Spain,91,12.2,3.5,25,https://cobblegobble.app/city/girona.html
+46,Heidelberg,Germany,84,21.9,6.5,8,https://cobblegobble.app/city/heidelberg.html
+47,Dubrovnik,Croatia,82,10.2,3,50,https://cobblegobble.app/city/dubrovnik.html
+48,Passau,Germany,81,18.3,5,13,https://cobblegobble.app/city/passau.html
+49,Rothenburg ob der Tauber,Germany,74,15.1,4.5,4,https://cobblegobble.app/city/rothenburg.html
+50,Split,Croatia,72,8.5,2.5,8,https://cobblegobble.app/city/split.html
+51,Landshut,Germany,71,16.4,4.5,4,https://cobblegobble.app/city/landshut.html
+52,Dinkelsbühl,Germany,70,15.4,4.5,8,https://cobblegobble.app/city/dinkelsbuhl.html
+53,Riga,Latvia,67,14.0,4,3,https://cobblegobble.app/city/riga.html
+54,Tallinn,Estonia,66,14.0,4,3,https://cobblegobble.app/city/tallinn.html
+55,Wasserburg am Inn,Germany,61,14.5,4,3,https://cobblegobble.app/city/wasserburg.html
+56,Vilnius,Lithuania,56,17.5,5,0,https://cobblegobble.app/city/vilnius.html
+57,Kraków,Poland,43,18.2,5,4,https://cobblegobble.app/city/krakow.html
+58,Český Krumlov,Czechia,35,8.2,2.5,5,https://cobblegobble.app/city/ceskykrumlov.html
+59,Třeboň,Czechia,31,8.3,2.5,0,https://cobblegobble.app/city/trebon.html
+60,Buxtehude,Germany,31,5.2,1.5,0,https://cobblegobble.app/city/buxtehude.html
+61,Pilsen,Czechia,22,7.4,2,1,https://cobblegobble.app/city/pilsen.html

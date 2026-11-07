@@ -132,6 +132,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bamberg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/bamberg.html"/>
     <image:image><image:loc>https://cobblegobble.app/assets/img/map-bamberg-full.png</image:loc></image:image></url>
+  <url><loc>https://cobblegobble.app/city/barcelona.html</loc><lastmod>2026-11-07</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/barcelona.html"/>
+    <image:image><image:loc>https://cobblegobble.app/assets/img/map-barcelona-full.png</image:loc></image:image></url>
+  <url><loc>https://cobblegobble.app/de/city/barcelona.html</loc><lastmod>2026-11-07</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/city/barcelona.html"/>
+    <image:image><image:loc>https://cobblegobble.app/assets/img/map-barcelona-full.png</image:loc></image:image></url>
   <url><loc>https://cobblegobble.app/city/bath.html</loc><lastmod>2026-10-20</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/city/bath.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/city/bath.html"/>
@@ -726,6 +736,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/bamberg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/bamberg.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/bamberg.html"/></url>
+  <url><loc>https://cobblegobble.app/walk/barcelona.html</loc><lastmod>2026-11-07</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/barcelona.html"/></url>
+  <url><loc>https://cobblegobble.app/de/walk/barcelona.html</loc><lastmod>2026-11-07</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/barcelona.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cobblegobble.app/walk/barcelona.html"/></url>
   <url><loc>https://cobblegobble.app/walk/bath.html</loc><lastmod>2026-10-20</lastmod><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cobblegobble.app/walk/bath.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://cobblegobble.app/de/walk/bath.html"/>
